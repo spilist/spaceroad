@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour {
   public static Player pl;
+  public Transform characters;
+  public string character;
   public PlayerAngle playerAngle;
 
   public Text speedText;
@@ -28,6 +30,12 @@ public class Player : MonoBehaviour {
   void Awake() {
     pl = this;
     playerAngle = GetComponent<PlayerAngle>();
+
+    Transform cha = characters.Find(character);
+    GetComponent<MeshFilter>().sharedMesh = cha.GetComponent<MeshFilter>().sharedMesh;
+    GameObject particles = cha.Find("Particles").gameObject;
+    particles.transform.SetParent(transform, false);
+    particles.SetActive(true);
   }
 
   void Start () {
