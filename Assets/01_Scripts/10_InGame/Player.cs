@@ -6,11 +6,13 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour {
   public static Player pl;
   public PlayerAngle playerAngle;
-  public float sensitivity;
-  public bool stopping;
 
-  public int stoppingSpeed = 10;
+  public Text speedText;
   public float baseSpeed = 80;
+  public float maxSpeed = 200;
+  public float acceleration = 40;
+  public float deceleration = 20;
+  public float curveSensitivity = 2;
   private float speedScale;
   private string moreSpeedCondition;
 
@@ -18,6 +20,8 @@ public class Player : MonoBehaviour {
   private Vector3 direction;
 
   private Rigidbody rb;
+  private bool gameStarted;
+  private bool decelerating;
 
   // public PlayerDirectionIndicator dirIndicator;
 
@@ -30,32 +34,45 @@ public class Player : MonoBehaviour {
     Vector2 randomV = Random.insideUnitCircle;
     randomV.Normalize();
     direction = new Vector3(randomV.x, 0, randomV.y);
-    direction = new Vector3(1, 0, 0);
     setDirection(direction);
-    speed = baseSpeed;
 
     rb = GetComponent<Rigidbody>();
-    rb.velocity = direction * speed;
   }
 
   void FixedUpdate () {
-    if (stopping) {
-      speed = Mathf.MoveTowards(speed, 0, Time.fixedDeltaTime * stoppingSpeed);
-    } else {
-      speed = baseSpeed;
-    }
-
+    speed = caculateSpeed();
     rb.velocity = direction * speed;
+    speedText.text = "SPEED: " + speed.ToString("0");
+  }
+
+  float caculateSpeed() {
+    if (!gameStarted) {
+      return baseSpeed;
+    } else if (decelerating) {
+      return Mathf.MoveTowards(speed, baseSpeed, Time.fixedDeltaTime * deceleration);
+    } else {
+      return Mathf.MoveTowards(speed, maxSpeed, Time.fixedDeltaTime * acceleration);
+    }
   }
 
   public float getSpeed() {
     return rb.velocity.magnitude;
   }
 
+  public void gameStart() {
+    gameStarted = true;
+  }
+
+  public void tiltBack() {
+    decelerating = false;
+    playerAngle.tiltBack();
+  }
+
   public void setPerpDirection(string dir) {
+    decelerating = true;
     int sign = (dir == "Left") ? 1 : -1;
 
-    Vector3 perp = new Vector3(-direction.z, 0, direction.x) * sign * Time.fixedDeltaTime * sensitivity;
+    Vector3 perp = new Vector3(-direction.z, 0, direction.x) * sign * Time.fixedDeltaTime * curveSensitivity;
     playerAngle.tilt(sign);
     setDirection((direction + perp).normalized);
   }

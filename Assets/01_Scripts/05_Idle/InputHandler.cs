@@ -8,6 +8,7 @@ public class InputHandler : MonoBehaviour
 {
   public Collider boundary;
   public GameObject hideAfterStart;
+  public GameObject inGameUI;
 
   private bool gameStarted = false;
   private bool react = true;
@@ -34,18 +35,16 @@ public class InputHandler : MonoBehaviour
     // }
 
     if (Input.GetAxis("Horizontal") != 0) {
+      startGame();
       float horiz = Input.GetAxis("Horizontal");
       string dirStr = horiz < 0 ? "Left" : "Right";
       Player.pl.setPerpDirection(dirStr);
     } else {
-      Player.pl.playerAngle.tiltBack();
+      Player.pl.tiltBack();
     }
 
     if (Input.GetMouseButtonDown(0)) {
-      if (!gameStarted) {
-        gameStarted = true;
-        hideAfterStart.SetActive(false);
-      }
+      startGame();
     }
 
     // if (reactAble() && Input.GetMouseButtonDown(0)) {
@@ -94,6 +93,14 @@ public class InputHandler : MonoBehaviour
         }
       }
     }
+  }
+
+  void startGame() {
+    if (gameStarted) return;
+    Player.pl.gameStart();
+    gameStarted = true;
+    hideAfterStart.SetActive(false);
+    inGameUI.SetActive(true);
   }
 
   // void OnMouseDown() {

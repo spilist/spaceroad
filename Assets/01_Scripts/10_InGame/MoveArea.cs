@@ -27,6 +27,6 @@ public class MoveArea : MonoBehaviour {
 
   void OnPointerUp() {
     moving = false;
-    Player.pl.playerAngle.tiltBack();
+    Player.pl.tiltBack();
   }
 }
