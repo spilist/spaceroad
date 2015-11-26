@@ -1710,7 +1710,7 @@ GameObject:
   - 114: {fileID: 1481276879}
   m_Layer: 5
   m_Name: MoveRightArea
-  m_TagString: Untagged
+  m_TagString: MoveArea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1768,7 +1768,7 @@ GameObject:
   - 114: {fileID: 1541647945}
   m_Layer: 5
   m_Name: MoveLeftArea
-  m_TagString: Untagged
+  m_TagString: MoveArea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

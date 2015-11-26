@@ -34,6 +34,7 @@ public class InputHandler : MonoBehaviour
     //   }
     // }
 
+    #if UNITY_EDITOR
     if (Input.GetAxis("Horizontal") != 0) {
       startGame();
       float horiz = Input.GetAxis("Horizontal");
@@ -42,10 +43,7 @@ public class InputHandler : MonoBehaviour
     } else {
       Player.pl.tiltBack();
     }
-
-    if (Input.GetMouseButtonDown(0)) {
-      startGame();
-    }
+    #endif
 
     // if (reactAble() && Input.GetMouseButtonDown(0)) {
     //   if (pause.isResuming()) return;
@@ -83,6 +81,9 @@ public class InputHandler : MonoBehaviour
       RaycastHit hit;
       if ( Physics.Raycast(ray, out hit) ) {
         GameObject hitObject = hit.transform.gameObject;
+
+        if (hitObject.tag != "MoveArea") return;
+        else startGame();
 
         if (Input.GetTouch(i).phase == TouchPhase.Began) {
           hitObject.SendMessage("OnPointerDown");
