@@ -1,22 +1,32 @@
 fileFormatVersion: 2
-guid: c23406cdb3d6c474dafe2fc3b4c36580
-timeCreated: 1448516335
+guid: fd5d8259aa9e7470394095900a1dff82
+timeCreated: 1448601408
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
-    100000: blue_high
-    100002: //RootNode
-    100004: red_arms
-    400000: blue_high
-    400002: //RootNode
-    400004: red_arms
-    2300000: blue_high
-    2300002: red_arms
-    3300000: blue_high
-    3300002: red_arms
-    4300000: red_arms
-    4300002: blue_high
+    100000: army_jet_fighter
+    100002: army_laser_ship
+    100004: //RootNode
+    100006: swat_barricade
+    100008: swat_bomb_drone
+    400000: army_jet_fighter
+    400002: army_laser_ship
+    400004: //RootNode
+    400006: swat_barricade
+    400008: swat_bomb_drone
+    2300000: army_jet_fighter
+    2300002: army_laser_ship
+    2300004: swat_barricade
+    2300006: swat_bomb_drone
+    3300000: army_jet_fighter
+    3300002: army_laser_ship
+    3300004: swat_barricade
+    3300006: swat_bomb_drone
+    4300000: swat_bomb_drone
+    4300002: swat_barricade
+    4300004: army_jet_fighter
+    4300006: army_laser_ship
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -41,7 +51,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1.39999998
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -75,7 +85,7 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   additionalBone: 0
   userData: 
   assetBundleName: 

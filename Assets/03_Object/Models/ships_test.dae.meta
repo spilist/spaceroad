@@ -1,0 +1,137 @@
+fileFormatVersion: 2
+guid: 59537fa4c537c4f1db4e85c6f2fdafbc
+timeCreated: 1448602985
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: army_jet_fighter
+    100002: army_laser_ship
+    100004: blue_high
+    100006: Matrix
+    100008: police_drone
+    100010: police_drone_1
+    100012: police_ship
+    100014: police_ship_1
+    100016: red_arms
+    100018: //RootNode
+    100020: swat_barricade
+    100022: swat_bomb_drone
+    100024: swat_ship
+    100026: swat_ship_1
+    400000: army_jet_fighter
+    400002: army_laser_ship
+    400004: blue_high
+    400006: Matrix
+    400008: police_drone
+    400010: police_drone_1
+    400012: police_ship
+    400014: police_ship_1
+    400016: red_arms
+    400018: //RootNode
+    400020: swat_barricade
+    400022: swat_bomb_drone
+    400024: swat_ship
+    400026: swat_ship_1
+    2300000: army_jet_fighter
+    2300002: army_laser_ship
+    2300004: blue_high
+    2300006: Matrix
+    2300008: police_drone
+    2300010: police_drone_1
+    2300012: police_ship
+    2300014: police_ship_1
+    2300016: red_arms
+    2300018: swat_barricade
+    2300020: swat_bomb_drone
+    2300022: swat_ship
+    2300024: swat_ship_1
+    3300000: army_jet_fighter
+    3300002: army_laser_ship
+    3300004: blue_high
+    3300006: Matrix
+    3300008: police_drone
+    3300010: police_drone_1
+    3300012: police_ship
+    3300014: police_ship_1
+    3300016: red_arms
+    3300018: swat_barricade
+    3300020: swat_bomb_drone
+    3300022: swat_ship
+    3300024: swat_ship_1
+    4300000: police_ship
+    4300002: red_arms
+    4300004: blue_high
+    4300006: police_drone
+    4300008: swat_ship
+    4300010: police_ship_1
+    4300012: swat_ship_1
+    4300014: police_drone_1
+    4300016: swat_bomb_drone
+    4300018: swat_barricade
+    4300020: army_jet_fighter
+    4300022: army_laser_ship
+    4300024: Matrix
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
