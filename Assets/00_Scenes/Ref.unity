@@ -332,8 +332,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85bd37e8eaf3c4f02a3d2a0f1a640b6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 91418582}
-  copyRotation: 0
 --- !u!1 &14321126
 GameObject:
   m_ObjectHideFlags: 0
@@ -2201,13 +2199,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fb517efa166c4343b51c913c420ca26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 4300062, guid: 7d4e33b83f6a046ab845e77e3044ffcc, type: 3}
-  inactiveMesh: {fileID: 4300072, guid: 7d4e33b83f6a046ab845e77e3044ffcc, type: 3}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 1
-  blinkOnStart: 0
-  controlMethod: Circle
 --- !u!65 &56190991
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2439,10 +2430,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8de7fa89bbbb845eeb2d683f3ce00bda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPosX: -50
-  offset: .5
-  sign: -1
-  scale: 5
 --- !u!1 &61289819
 GameObject:
   m_ObjectHideFlags: 0
@@ -2611,7 +2598,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd5932a4902b4fa0850c1d0a850bac8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FPS: {fileID: 874182959}
 --- !u!1 &66284150
 GameObject:
   m_ObjectHideFlags: 0
@@ -2798,32 +2784,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2f560729466a47399ba9fd666f56ce4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  whatToDrag: {fileID: 552014890}
-  direction: LeftRight
-  returningSpeed: 2000
-  activeCharactersMaterial: {fileID: 2100000, guid: 72bc1cf4170904df6a7968af1cadc566,
-    type: 2}
-  selectedCharacterRotationSpeed: 150
-  cubeYouHave: {fileID: 545979715}
-  goldenCubeYouHave: {fileID: 1928310596}
-  selectButton: {fileID: 633213479}
-  buyButton: {fileID: 1873613235}
-  characterName: {fileID: 940892755}
-  rarity: {fileID: 35954956}
-  description: {fileID: 230479085}
-  colorsPerRarity:
-  - {r: 1, g: 1, b: 1, a: 1}
-  - {r: 0, g: 1, b: .337254912, a: 1}
-  - {r: .682758629, g: .323529422, b: 1, a: 1}
-  selectWidth: 60
-  selectedOffset_y: 30
-  selectedOffset_z: 100
-  scaleChangingSpeed: 50
-  numYourCharacters: {fileID: 14321128}
-  numAllCharacters: {fileID: 1086984978}
-  characterSelectionSound: {fileID: 8300000, guid: c43141733afb54733910fd1c0db3c492,
-    type: 3}
-  characterBuySound: {fileID: 8300000, guid: 969f3d2adc0a649d8b956283267bbe8c, type: 3}
 --- !u!1 &85813355
 GameObject:
   m_ObjectHideFlags: 0
@@ -2904,13 +2864,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d44be1f35b604dd5b78103a86457207, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  guageForEffect: 0
-  startScale: .100000001
-  stayScale: 1
-  smallScale: .600000024
-  largeScale: 1.20000005
-  changeTime: .100000001
-  stayTime: 1
 --- !u!1 &87572407
 GameObject:
   m_ObjectHideFlags: 0
@@ -3024,13 +2977,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fb517efa166c4343b51c913c420ca26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 4300062, guid: 7d4e33b83f6a046ab845e77e3044ffcc, type: 3}
-  inactiveMesh: {fileID: 4300072, guid: 7d4e33b83f6a046ab845e77e3044ffcc, type: 3}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 1
-  blinkOnStart: 0
-  controlMethod: Touch
 --- !u!65 &91387177
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3121,46 +3067,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e43d260986d57a40b41b81b06bb0f7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensitivity: 3
-  stopping: 0
-  stopSphereRadius: .400000006
-  stoppingSpeed: 150
-  baseSpeed: 150
-  effects: {fileID: 1753770006}
-  spawnManager: {fileID: 1991538111}
-  gcCount: {fileID: 966334536}
-  cubesAsItIsUntill: 20
-  restCubesChangePer: 5
-  nearAsteroidBonus: 10
-  bonusCubeScaleChange: .600000024
-  bonusCubeMaxBase: 100
-  tumble: 4
-  monm: {fileID: 1991538109}
-  rdm: {fileID: 1991538105}
-  dpm: {fileID: 1991538120}
-  blm: {fileID: 1991538108}
-  icm: {fileID: 1991538122}
-  shakeBase: 10
-  shakeDuring: .5
-  boosterSpeedUpAmount: 75
-  maxBoosterSpeed: 100
-  boosterSpeedDecreaseBase: 60
-  boosterSpeedDecreasePerTime: 20
-  particles: {fileID: 178344, guid: b185d52f68bf5499e81f948bbbf1bd8c, type: 2}
-  cubePool: []
-  cubeAmount: 50
-  originalCubeMat: {fileID: 2100000, guid: badf03f0d5c054dc4b3b3b3df9ee6e20, type: 2}
-  goldenCubeMat: {fileID: 2100000, guid: b0c5dcb9f3d5044c898bdbdd644768ab, type: 2}
-  cubeOriginalColor: {r: 0, g: .65882355, b: .690196097, a: .737254918}
-  cubeOriginalTrailColor: {r: .0745098069, g: .650980413, b: .843137264, a: .121568628}
-  goldenCubeParticleTrailColor: {r: 1, g: .886274517, b: 0, a: .121568628}
-  reboundSpeed: 320
-  originalScale: 0
-  afterStrengthenDuration: 1
-  contactCollider: {fileID: 1298175624}
-  playerDopple: {fileID: 146242, guid: c2d782534ed3b4197aa101a7d17d90b9, type: 2}
-  dirIndicator: {fileID: 1322196947}
-  playerShip: {fileID: 1686488915}
 --- !u!135 &91418585
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3242,30 +3148,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c55220cdcdad94d36a59fafc03d624b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characters: {fileID: 552014891}
-  dpm: {fileID: 1991538120}
-  skill_magnet: {fileID: 307617794}
-  skill_monster: {fileID: 494443781}
-  skill_metal: {fileID: 706357633}
-  monsterMesh: {fileID: 4300000, guid: 78464716239464853a9a5be83b950c56, type: 3}
-  monsterMaterial: {fileID: 2100000, guid: b302d2c5d7c544297ac46144f54931e3, type: 2}
-  metalMat: {fileID: 2100000, guid: d19ae5f122c6344ad809f0cb588d6db9, type: 2}
-  playerEffectMat: {fileID: 2100000, guid: 85281042dc9ad418687a6118b992e8b1, type: 2}
-  metalColors:
-  - {r: .313725501, g: .313725501, b: .313725501, a: 1}
-  - {r: .160784319, g: .160784319, b: .160784319, a: 0}
-  doppleColors:
-  - {r: .600000024, g: .835294127, b: 1, a: .70588237}
-  - {r: 0, g: 1, b: 1, a: 0}
-  doppleMetalColors:
-  - {r: .254901975, g: .254901975, b: .254901975, a: .70588237}
-  - {r: .615686297, g: .650980413, b: 1, a: 0}
-  originalMaterial: {fileID: 2100000, guid: 9b422acddcdd24ad994ef6f9b89c8c5d, type: 2}
-  playerParticlesParent: {fileID: 678200079}
-  booster: {fileID: 131396333}
-  chargedEffect: {fileID: 0}
-  afterStrengthenEffect: {fileID: 1282841668}
-  teleportingDuration: .0299999993
 --- !u!1 &96157825
 GameObject:
   m_ObjectHideFlags: 0
@@ -3459,18 +3341,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e164f9e539aa74ccea5c6819a6613369, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  generatePer: .100000001
-  afterImageDuration: 1
-  rotatingSpeed: 1000
-  afterImageMainColors:
-  - {r: 1, g: .427450985, b: .117647059, a: .227450982}
-  - {r: .90196079, g: .800000012, b: .223529413, a: .200000003}
-  afterImageEmissiveColors:
-  - {r: 1, g: .101960786, b: 0, a: 0}
-  - {r: 1, g: .101960786, b: 0, a: 0}
-  sizeChangeInterval: .100000001
-  middleSize: 3
-  bigSize: 6.5
 --- !u!135 &98551110
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3528,12 +3398,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1b222984a7384038a7309ad9c408267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doNotShow: 0
-  conditionNotRequired: 1
-  showConditions: []
-  description: "\uAC15\uCCA0\uD654\uB97C \uBE44\uB86F\uD55C \uAC15\uD654\uD6A8\uACFC\uB97C
-    \uC774\uC6A9\uD558\uC5EC \uC6B4\uC11D\uACFC \uC720\uC131\uC744 \uD30C\uAD34\uD558\uACE0
-    \uB9CE\uC740 \uD050\uBE0C\uB97C \uC5BB\uC744 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
 --- !u!222 &99785369
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3666,37 +3530,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc8ae749e8da24e548afde50812e3682, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 4300022, guid: 7d4e33b83f6a046ab845e77e3044ffcc, type: 3}
-  inactiveMesh: {fileID: 0}
-  blinkingMesh: {fileID: 4300028, guid: 7d4e33b83f6a046ab845e77e3044ffcc, type: 3}
-  blinkingSeconds: .400000006
-  playTouchSound: 1
-  blinkOnStart: 0
-  uncommonChance: 12
-  rareChance: 3
-  characters: {fileID: 552014891}
-  characterCube: {fileID: 714900423}
-  gathering: {fileID: 1512218220}
-  explosion: {fileID: 538307614}
-  collect: {fileID: 2081388193}
-  congraturation: {fileID: 170816989}
-  createdCharacter: {fileID: 2142102756}
-  characterName: {fileID: 2073951470}
-  rarity: {fileID: 1859176583}
-  isNewCharacter: {fileID: 1165747846}
-  nextChance: {fileID: 1673126734}
-  shareButton: {fileID: 1505273305}
-  selectButton: {fileID: 1405439387}
-  backButton: {fileID: 1410312520}
-  cubesYouHave: {fileID: 545979715}
-  goldenCubesYouHave: {fileID: 1928310596}
-  notAffordableTextColor: {r: .513725519, g: .513725519, b: .513725519, a: 1}
-  originalSize: 200
-  shrinkSize: 100
-  totalSeconds: 3
-  startInterval: .300000012
-  showUIsAfter: 1
-  characterRotatingSpeed: 150
 --- !u!65 &103501022
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3910,11 +3743,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1b222984a7384038a7309ad9c408267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doNotShow: 0
-  conditionNotRequired: 1
-  showConditions: []
-  description: "\uB9E4\uC77C \uCCAB \uBC88\uC9F8\uB85C \uC644\uB8CC\uD55C \uD018\uC2A4\uD2B8\uB294
-    \uD669\uAE08\uD050\uBE0C 30\uAC1C\uB97C \uBCF4\uC0C1\uC73C\uB85C \uBC1B\uC2B5\uB2C8\uB2E4."
 --- !u!222 &121058734
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6356,11 +6184,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a1e6a71ab2045f48fec3dd5a3ab696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isCollector: 0
-  combined: 0
-  activeMesh: {fileID: 4300000, guid: f80309f57b314445da6bdad115e9d603, type: 3}
-  activeMaterial: {fileID: 2100000, guid: ba8f567a953b04976a8fc7878a9a6535, type: 2}
-  activeMaterial2: {fileID: 0}
 --- !u!33 &145544901
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -6567,11 +6390,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 518619572cf874c74a8f7c73fd8c80bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: "\uCCAD\uC18C\uB85C\uBD07"
-  price: 1500
-  rarity: Rare
-  description: "\uD050\uBE0C \uCD94\uAC00 \uD68D\uB4DD+"
-  description2: "\uC790\uAE30 \uC7A5\uCE58 \uBC94\uC704 \uC99D\uAC00"
 --- !u!114 &151261184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6583,7 +6401,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092fd6f74960f4d74b2cf86c5e51ab18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moreCubes: 40
 --- !u!114 &151261185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6595,8 +6412,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee5d534ed73074e08bf5f24b3581f72d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mm: {fileID: 307617794}
-  moreArea: 40
 --- !u!1 &155100440
 GameObject:
   m_ObjectHideFlags: 0
@@ -10434,17 +10249,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0346979d4bfc84a0bb088ab05cac62d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crossyPos: {x: 50, y: 0, z: -180}
-  crossyRot: {x: 40, y: 345, z: 0}
-  fixAspect: 0
-  aspectWidth: 1920
-  aspectHeight: 1080
-  player: {fileID: 91418581}
-  slowly: 0
-  smoothTime: .100000001
-  speed: 20
-  shakeDuring: .5
-  shakeAmount: .699999988
 --- !u!124 &192454347
 Behaviour:
   m_ObjectHideFlags: 0
@@ -11791,14 +11595,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e68bb61d5fb37471abfa0af9578835a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 0}
-  inactiveMesh: {fileID: 0}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 1
-  blinkOnStart: 0
-  selectionLimit: 3
-  hasSelection: 1
 --- !u!1 &211912679
 GameObject:
   m_ObjectHideFlags: 0
@@ -13056,11 +12852,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1b222984a7384038a7309ad9c408267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doNotShow: 0
-  conditionNotRequired: 1
-  showConditions: []
-  description: "\uBCF4\uC720\uD55C \uCE90\uB9AD\uD130\uAC00 \uB9CE\uC544\uC9C8\uC218\uB85D
-    \uCE90\uB9AD\uD130\uB97C \uBF51\uB294 \uBE44\uC6A9\uC774 \uB298\uC5B4\uB0A9\uB2C8\uB2E4."
 --- !u!222 &216904547
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15502,13 +15293,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c55c8e133eb0c47e28e0cc77e0aaaeb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gauge: {fileID: 493085440}
-  gaugeShell: {fileID: 1480176267}
-  gaugeIcon: {fileID: 1683774461}
-  mustDieIn: 15
-  getAmountbyCubes: 1
-  getRate: 2
-  loseRate: 1
 --- !u!1 &227621890
 GameObject:
   m_ObjectHideFlags: 0
@@ -15844,7 +15628,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 193d0a3969d7846999410bfeb4e7f70a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controlMethod: LR
 --- !u!1 &256755159
 GameObject:
   m_ObjectHideFlags: 0
@@ -16024,8 +15807,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85bd37e8eaf3c4f02a3d2a0f1a640b6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 845509559}
-  copyRotation: 1
 --- !u!1 &283591907
 GameObject:
   m_ObjectHideFlags: 0
@@ -16100,11 +15881,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 100.5}
   m_SizeDelta: {x: 100, y: 115.099998}
   m_Pivot: {x: .5, y: .5}
---- !u!198 &298288788 stripped
-ParticleSystem:
-  m_PrefabParentObject: {fileID: 19807214, guid: df73c8fb265644b57873e18c943161ee,
-    type: 2}
-  m_PrefabInternal: {fileID: 333408697}
 --- !u!1 &305330277
 GameObject:
   m_ObjectHideFlags: 0
@@ -16179,16 +15955,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d09a33d9d58c84c8f8274e5525f71da9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillObject: {fileID: 851953042}
-  useSkillEffect: {fileID: 1552135346}
-  duration: 4
-  coolTime: 16
-  level: 0
-  radiusPerLevel: 5a00000082000000b4000000
-  lifetimePerLevel:
-  - .675000012
-  - .975000024
-  - 1.38
 --- !u!1 &311986688
 GameObject:
   m_ObjectHideFlags: 0
@@ -17554,13 +17320,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 686212e7a972945beb15d31c59a10dff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 0}
-  inactiveMesh: {fileID: 0}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 0
-  blinkOnStart: 0
-  linkTo: http://google.com
 --- !u!1 &335624706
 GameObject:
   m_ObjectHideFlags: 0
@@ -17898,8 +17657,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85bd37e8eaf3c4f02a3d2a0f1a640b6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 91418582}
-  copyRotation: 0
 --- !u!64 &393081739
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18088,7 +17845,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 603a1c64f438d4bf38712e3180e53359, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallax: 150
 --- !u!23 &424831004
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18544,11 +18300,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 518619572cf874c74a8f7c73fd8c80bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: "\uB370\uB4DC\uBCFC"
-  price: 500
-  rarity: Uncommon
-  description: "\uBC1B\uB294 \uB370\uBBF8\uC9C0 \uAC10\uC18C"
-  description2: 
 --- !u!114 &465752965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18560,7 +18311,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da252fb5564d349a09a01115e96a911a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lessDamage: 15
 --- !u!1 &472324035
 GameObject:
   m_ObjectHideFlags: 0
@@ -18606,13 +18356,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1b222984a7384038a7309ad9c408267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doNotShow: 0
-  conditionNotRequired: 0
-  showConditions:
-  - RainbowDonut
-  - Blackhole
-  description: "\uBB34\uC9C0\uAC1C\uB97C \uD0C0\uBA74 \uBE14\uB799\uD640\uC5D0 \uC8FD\uC9C0
-    \uC54A\uC2B5\uB2C8\uB2E4."
 --- !u!222 &472324038
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18822,13 +18565,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14513603c84e0476ab7810b5b5376049, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillObject: {fileID: 1426521849}
-  useSkillEffect: {fileID: 1830827562}
-  duration: 4
-  coolTime: 16
-  level: 0
-  monsterFilter: {fileID: 1997391145}
-  mm: {fileID: 1991538109}
 --- !u!1 &494883763
 GameObject:
   m_ObjectHideFlags: 0
@@ -19099,11 +18835,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 518619572cf874c74a8f7c73fd8c80bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: "\uAE61\uD1B5\uB85C\uBD07"
-  price: 1500
-  rarity: Rare
-  description: "\uBC1B\uB294 \uB370\uBBF8\uC9C0 \uAC10\uC18C+"
-  description2: "\uAC15\uCCA0 \uC0C1\uD0DC \uC774\uB3D9\uC18D\uB3C4 \uC99D\uAC00"
 --- !u!114 &501650845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19115,7 +18846,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da252fb5564d349a09a01115e96a911a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lessDamage: 30
 --- !u!114 &501650846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19127,8 +18857,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cabbf9bf45ff4fc8ae8b8e6244d9812, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skill_metal: {fileID: 706357633}
-  moreSpeed: 125
 --- !u!1 &503519268
 GameObject:
   m_ObjectHideFlags: 0
@@ -19203,7 +18931,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &507386076
 Transform:
   m_ObjectHideFlags: 0
@@ -19369,12 +19097,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bfd5bb8368a641ecaadea0bac64bb73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillObject: {fileID: 533108646}
-  useSkillEffect: {fileID: 171122210}
-  duration: 4
-  coolTime: 16
-  level: 0
-  dpm: {fileID: 1991538120}
 --- !u!1 &520928161
 GameObject:
   m_ObjectHideFlags: 0
@@ -19669,13 +19391,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d44be1f35b604dd5b78103a86457207, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  guageForEffect: 25
-  startScale: .100000001
-  stayScale: 1
-  smallScale: .600000024
-  largeScale: 1.20000005
-  changeTime: .100000001
-  stayTime: 1
 --- !u!114 &526398246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19807,9 +19522,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af0e08c3844d8484cb160fba782920b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeTo: Dopple
-  effectName: Blink
-  targetScale: 0
 --- !u!1 &537339453
 GameObject:
   m_ObjectHideFlags: 0
@@ -22133,7 +21845,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc688e76308ce4e2ea67b6162544a877, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  which: Cubes
 --- !u!114 &545979718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22257,12 +21968,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04d1e4ff83e344c2ab093563cdcc4568, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 0}
-  inactiveMesh: {fileID: 0}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 1
-  blinkOnStart: 0
 --- !u!1 &552014890
 GameObject:
   m_ObjectHideFlags: 0
@@ -22377,13 +22082,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81fff6edda5804dd98fbd2d8f5848155, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 4300078, guid: 7d4e33b83f6a046ab845e77e3044ffcc, type: 3}
-  inactiveMesh: {fileID: 4300090, guid: 7d4e33b83f6a046ab845e77e3044ffcc, type: 3}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 1
-  blinkOnStart: 0
-  settingName: BGMOff
 --- !u!23 &552354262
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23695,21 +23393,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5c86adc302a0406fa2f79b7dc39f507, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allCharacters: {fileID: 400016, guid: 06ea95d279c7341edb83769ec8c7baed, type: 3}
-  characterPrefab: {fileID: 103454, guid: f5fb649f47d1a4dbe94d8c89f4fbe94b, type: 2}
-  characterPool: []
-  characterAmount: 20
-  minSpawnInterval: 1
-  maxSpawnInterval: 3
-  spawnRadius: 200
-  speed: 200
-  baseSpeed: 50
-  tumble: 5
-  minBoosterAmount: 40
-  maxBoosterAmonut: 120
-  boosterSpeedDecreaseBase: 70
-  boosterSpeedDecreasePerTime: 20
-  delayAfterMove: .5
 --- !u!1 &566110653
 GameObject:
   m_ObjectHideFlags: 0
@@ -23883,11 +23566,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 518619572cf874c74a8f7c73fd8c80bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: "\uC42C\uC8FC"
-  price: 100
-  rarity: Common
-  description: 
-  description2: 
 --- !u!1 &579922197
 GameObject:
   m_ObjectHideFlags: 0
@@ -25294,23 +24972,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4d832278b190421e8a2402bc55159cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 0}
-  inactiveMesh: {fileID: 0}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 1
-  blinkOnStart: 0
-  maxLevel: 3
-  isCollector: 0
-  isGoldOnly: 0
-  isCubeOnly: 0
-  objectName: "\uACE0\uC7A5\uB09C \uC790\uAE30\uC7A5 \uCD9C\uB825\uAE30"
-  description: "\uC790\uAE30\uC7A5\uC744 \uD65C\uC6A9\uD574 \uB113\uC740 \uC9C0\uC5ED\uC758
-    \uD050\uBE0C\uB97C \uD68D\uB4DD\uD558\uC138\uC694."
-  upgradeEffect: "\uCD9C\uB825 \uBC94\uC704 \uC99D\uAC00"
-  cubePrice: 10000
-  goldenCubePrice: 100
-  prices: 88130000983a000030750000
 --- !u!65 &594525186
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25676,12 +25337,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 066bb6e74087b490a835f160ded05a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 0}
-  inactiveMesh: {fileID: 0}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 1
-  blinkOnStart: 0
 --- !u!4 &621705454
 Transform:
   m_ObjectHideFlags: 0
@@ -26774,17 +26429,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d979165f89e7640e0b49bb2db76f9302, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inactiveObjectsMaterial: {fileID: 2100000, guid: 73269cd7f59c840a6b04274f0e651637,
-    type: 2}
-  objectActiveSound: {fileID: 8300000, guid: c43141733afb54733910fd1c0db3c492, type: 3}
-  objectBuySound: {fileID: 8300000, guid: 969f3d2adc0a649d8b956283267bbe8c, type: 3}
-  activeColor: {r: 1, g: 1, b: 1, a: 1}
-  inactiveColor: {r: .588235259, g: .588235259, b: .588235259, a: 1}
-  objDetail: {fileID: 1211708158}
-  emptyDescription: {fileID: 1272507233}
-  cubeYouHave: {fileID: 545979715}
-  goldenCubeYouHave: {fileID: 1928310596}
-  rotationSpeed: 150
 --- !u!1 &629491245
 GameObject:
   m_ObjectHideFlags: 0
@@ -26864,11 +26508,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a1e6a71ab2045f48fec3dd5a3ab696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isCollector: 0
-  combined: 0
-  activeMesh: {fileID: 4300000, guid: 8a22f0f8e467e47d3bf17a959ccaa215, type: 3}
-  activeMaterial: {fileID: 2100000, guid: 78316b2e78c3d43398c3151665c2836a, type: 2}
-  activeMaterial2: {fileID: 0}
 --- !u!1 &632609195
 GameObject:
   m_ObjectHideFlags: 0
@@ -27025,15 +26664,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23ae3153f0d004244a807408cd11b281, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 0}
-  inactiveMesh: {fileID: 0}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 1
-  blinkOnStart: 0
-  menus: {fileID: 1082642569}
-  changeManager: {fileID: 91418591}
-  playAgain: {fileID: 1431479375}
 --- !u!4 &635746625
 Transform:
   m_ObjectHideFlags: 0
@@ -27073,10 +26703,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c29316fd68134f6a8504287e1c8cfcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resetAll: 0
-  resetCube: 100000
-  resetGoldenCube: 10000
-  normalFrameRate: 50
 --- !u!4 &638403303
 Transform:
   m_ObjectHideFlags: 0
@@ -27231,11 +26857,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 518619572cf874c74a8f7c73fd8c80bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: "\uB808\uC639\uD654\uBD84"
-  price: 100
-  rarity: Common
-  description: 
-  description2: 
 --- !u!1 &644697225
 GameObject:
   m_ObjectHideFlags: 0
@@ -27284,13 +26905,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fb517efa166c4343b51c913c420ca26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 4300062, guid: 7d4e33b83f6a046ab845e77e3044ffcc, type: 3}
-  inactiveMesh: {fileID: 4300072, guid: 7d4e33b83f6a046ab845e77e3044ffcc, type: 3}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 1
-  blinkOnStart: 0
-  controlMethod: Stick
 --- !u!65 &644697228
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27381,7 +26995,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc688e76308ce4e2ea67b6162544a877, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  which: GoldenCubes
 --- !u!114 &667805693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27542,10 +27155,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 675113416}
---- !u!1 &675405685 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 182158, guid: 247f56b855b0645959846fad0b6e23f3, type: 2}
-  m_PrefabInternal: {fileID: 728079726}
 --- !u!1 &676619933
 GameObject:
   m_ObjectHideFlags: 0
@@ -27594,11 +27203,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a1e6a71ab2045f48fec3dd5a3ab696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isCollector: 1
-  combined: 0
-  activeMesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-  activeMaterial: {fileID: 2100000, guid: 6349f75c450794695ab374359d5f8955, type: 2}
-  activeMaterial2: {fileID: 0}
 --- !u!33 &676619936
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -28939,14 +28543,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db17e463754b14a9a88929a7b4e53ee0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 4300062, guid: 7d4e33b83f6a046ab845e77e3044ffcc, type: 3}
-  inactiveMesh: {fileID: 4300072, guid: 7d4e33b83f6a046ab845e77e3044ffcc, type: 3}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 0
-  blinkOnStart: 0
-  objectsMenu: {fileID: 625220742}
-  errorSound: {fileID: 8300000, guid: f456331f54b714e6c8014b90393d67cb, type: 3}
 --- !u!23 &685215975
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29076,16 +28672,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a8914fd2fa80452cbbafc5a9867bd5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillObject: {fileID: 1540096017}
-  useSkillEffect: {fileID: 675405685}
-  duration: 4
-  coolTime: 16
-  level: 0
-  destroyBonusPerLevel:
-  - 0
-  - 1
-  - 2
-  bonus: 0
 --- !u!1 &707381357
 GameObject:
   m_ObjectHideFlags: 0
@@ -29160,11 +28746,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a1e6a71ab2045f48fec3dd5a3ab696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isCollector: 0
-  combined: 0
-  activeMesh: {fileID: 4300000, guid: 977eaa52d67d74cb7a4e06604cc96f2e, type: 3}
-  activeMaterial: {fileID: 2100000, guid: 52560eb15b0ed41a6a6af15921bb4929, type: 2}
-  activeMaterial2: {fileID: 0}
 --- !u!1 &709580382
 GameObject:
   m_ObjectHideFlags: 0
@@ -29346,10 +28927,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 625330b2ce5d543668415362acc37f39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inGameUI: {fileID: 2134279969}
-  indicatorToCollect: {fileID: 129232, guid: cc3d12dfbccec43dba0ee757f254b06a, type: 2}
-  indicatorPool: []
-  indicatorAmount: 20
 --- !u!114 &713807496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29361,8 +28938,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85bd37e8eaf3c4f02a3d2a0f1a640b6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 91418582}
-  copyRotation: 0
 --- !u!1 &714900423
 GameObject:
   m_ObjectHideFlags: 0
@@ -32160,7 +31735,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f98771b136d7d4127bdecd96643b4757, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveDuration: .200000003
 --- !u!1 &743589005
 GameObject:
   m_ObjectHideFlags: 0
@@ -33316,7 +32890,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8eaf17df6df8f4450b6402c46e76a39a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collideRadius: 3
 --- !u!114 &747492154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33328,8 +32901,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85bd37e8eaf3c4f02a3d2a0f1a640b6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 91418582}
-  copyRotation: 0
 --- !u!135 &747492155
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -33967,23 +33538,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4d832278b190421e8a2402bc55159cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 0}
-  inactiveMesh: {fileID: 0}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 1
-  blinkOnStart: 0
-  maxLevel: 3
-  isCollector: 0
-  isGoldOnly: 0
-  isCubeOnly: 0
-  objectName: "\uC6B0\uC8FC \uBAAC\uC2A4\uD130"
-  description: "\uC6B0\uC8FC\uB97C \uB5A0\uB3CC\uBA70 \uB2F9\uC2E0\uC744 \uC7A1\uC544\uBA39\uC73C\uB824
-    \uD558\uC9C0\uB9CC,  \uC57D\uD574\uC9C0\uACE0 \uB098\uBA74 \uC804\uC138\uC5ED\uC804."
-  upgradeEffect: "\uBBF8\uB2C8\uBAAC\uC2A4\uD130 \uC0DD\uC131 \uC218 \uC99D\uAC00"
-  cubePrice: 30000
-  goldenCubePrice: 300
-  prices: 204e000060ea0000c0d40100
 --- !u!1 &778864370
 GameObject:
   m_ObjectHideFlags: 0
@@ -34455,13 +34009,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d44be1f35b604dd5b78103a86457207, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  guageForEffect: 50
-  startScale: .100000001
-  stayScale: 1
-  smallScale: .600000024
-  largeScale: 1.20000005
-  changeTime: .100000001
-  stayTime: 1
 --- !u!1 &825030828
 GameObject:
   m_ObjectHideFlags: 0
@@ -34775,11 +34322,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a1e6a71ab2045f48fec3dd5a3ab696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isCollector: 0
-  combined: 0
-  activeMesh: {fileID: 4300000, guid: e1cbad7ded657f14c9dafa177f579cb2, type: 3}
-  activeMaterial: {fileID: 2100000, guid: 8321d7bcb0011433a9d399c26c2f19a0, type: 2}
-  activeMaterial2: {fileID: 0}
 --- !u!33 &845509562
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -36226,8 +35768,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85bd37e8eaf3c4f02a3d2a0f1a640b6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 91418582}
-  copyRotation: 0
 --- !u!114 &851953048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36239,7 +35779,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2c9cf425be7e419bb201f9169f5881f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mm: {fileID: 307617794}
 --- !u!114 &851953049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36251,9 +35790,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af0e08c3844d8484cb160fba782920b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeTo: 
-  effectName: Magnet
-  targetScale: 0
 --- !u!82 &851953050
 AudioSource:
   m_ObjectHideFlags: 0
@@ -37545,11 +37081,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 518619572cf874c74a8f7c73fd8c80bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: "\uBBF8\uB2C8\uBAAC"
-  price: 1500
-  rarity: Rare
-  description: "\uC774\uB3D9\uC18D\uB3C4 \uC99D\uAC00+"
-  description2: "\uBAAC\uC2A4\uD130 \uC9C0\uC18D\uC2DC\uAC04 \uC99D\uAC00"
 --- !u!114 &858162619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37561,7 +37092,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35afc6ba76566419b8cd03d337261125, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moreSpeedRate: 40
 --- !u!114 &858162620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37573,8 +37103,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3767bb162a8ec43198d0798af9c9d1d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skill_monster: {fileID: 494443781}
-  moreDuration: 4
 --- !u!1 &860393912
 GameObject:
   m_ObjectHideFlags: 0
@@ -37753,7 +37281,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 603a1c64f438d4bf38712e3180e53359, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallax: 150
 --- !u!23 &861830370
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -37796,8 +37323,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d456eca43a6c944a08d59f1b6f25bd92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  alphaChangeUpDuration: 1
-  alphaChangeDownDuration: .5
 --- !u!82 &861830373
 AudioSource:
   m_ObjectHideFlags: 0
@@ -37923,25 +37448,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7eac663a70dbe4486b1147277acafd1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  back: {fileID: 1410312525}
-  totalCubes: {fileID: 1768431855}
-  cubes: {fileID: 750202313}
-  goldenCubes: {fileID: 2127701742}
-  cubesRecords: {fileID: 1174556616}
-  cubesHighscoreDescription: {fileID: 520928163}
-  cubesHighscoreNumber: {fileID: 1036151938}
-  cubesCurrentScore: {fileID: 2141975767}
-  elapsedTime: {fileID: 938757372}
-  CPS: {fileID: 1983272583}
-  phaseBonus: {fileID: 1223434895}
-  collectorBonus: {fileID: 122585035}
-  goldenCubesCount: {fileID: 966334536}
-  newHighscoreColor: {r: .925721943, g: .963235319, b: .283304483, a: 1}
-  scoreUpdateMaxStandard: 2000
-  scoreUpdateMaxDuration: 2
-  scoreUpdateMinDuration: .200000003
-  stayDuration: .5
-  moveDuration: .200000003
 --- !u!114 &868146743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38270,8 +37776,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85bd37e8eaf3c4f02a3d2a0f1a640b6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 91418582}
-  copyRotation: 0
 --- !u!1 &892718242
 GameObject:
   m_ObjectHideFlags: 0
@@ -38425,41 +37929,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32117b6bc59844119b6e551628235a96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textPerLevel:
-  - IceDebris
-  - Minimon 1
-  - Blackhole
-  - Meteroid
-  - Bomb
-  - BigBomb
-  - UFO
-  cuberNeedsPerLevel: c8000000fa0000002c0100005e01000090010000c2010000f401000026020000
-  debrisDistancesPerLevel: e8030000e8030000e8030000e8030000e8030000e8030000e8030000e8030000
-  timeLimitPerLevel: 0f0000000f0000000f0000000f0000000f0000000f0000000f0000000f000000
-  gcCount: {fileID: 966334536}
-  icm: {fileID: 1991538122}
-  pmm: {fileID: 1991538127}
-  npm: {fileID: 1991538117}
-  atm: {fileID: 1991538112}
-  ssm: {fileID: 1991538121}
-  EMFilter: {fileID: 1767020066}
-  EMFilterTargetAlpha: .109999999
-  ntm: {fileID: 1991538107}
-  meteroidFilter: {fileID: 211912680}
-  meteroidFilterAlpha1: .0799999982
-  meteroidFilterAlpha2: .119999997
-  meteroidFilterChangeDuration1: 3
-  meteroidFilterChangeDuration2: 2
-  dem: {fileID: 1991538123}
-  blm: {fileID: 1991538108}
-  asm: {fileID: 1991538124}
-  phaseIndicator: {fileID: 1406922903}
-  phaseText: {fileID: 1367745761}
-  originalPosX: -220
-  showPosX: -480
-  showAfter: .5
-  changingDuration: .200000003
-  showDuration: 4
 --- !u!4 &894246144
 Transform:
   m_ObjectHideFlags: 0
@@ -38683,13 +38152,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d44be1f35b604dd5b78103a86457207, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  guageForEffect: 20
-  startScale: .100000001
-  stayScale: 1
-  smallScale: .600000024
-  largeScale: 1.20000005
-  changeTime: .100000001
-  stayTime: 1
 --- !u!1 &912634684
 GameObject:
   m_ObjectHideFlags: 0
@@ -38783,18 +38245,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b2a1c6c01ea844e8a42f4c1cbd02792, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cuber: {fileID: 1270861830}
-  inGameUI: {fileID: 2134279969}
-  increaseSpeed: 5
-  cubesCount: {fileID: 589887826}
-  cubesHighscoreText: {fileID: 57075064}
-  howManyCubesGet: {fileID: 108266, guid: 1afee8ce7a54f4af597a4df1a8e26203, type: 2}
-  howManyBonusCubesGet: {fileID: 148746, guid: 5532efb61343048a585bb8932fab354f, type: 2}
-  cubesGetOnSuperheat: {fileID: 186928, guid: 9cf52ddd240d14b899e8ab04b8e9b3de, type: 2}
-  cubePool: []
-  bonusCubePool: []
-  cubeOnSuperheatPool: []
-  cubeAmount: 20
 --- !u!4 &913682496
 Transform:
   m_ObjectHideFlags: 0
@@ -38848,7 +38298,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 603a1c64f438d4bf38712e3180e53359, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallax: 180
 --- !u!23 &917148114
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -40183,11 +39632,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 518619572cf874c74a8f7c73fd8c80bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: "\uB85C\uBD07\uCF54\uAE30"
-  price: 0
-  rarity: Common
-  description: 
-  description2: 
 --- !u!1 &924930994
 GameObject:
   m_ObjectHideFlags: 0
@@ -40335,8 +39779,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85bd37e8eaf3c4f02a3d2a0f1a640b6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 91418582}
-  copyRotation: 0
 --- !u!65 &936221362
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40439,23 +39881,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4d832278b190421e8a2402bc55159cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 0}
-  inactiveMesh: {fileID: 0}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 1
-  blinkOnStart: 0
-  maxLevel: 3
-  isCollector: 0
-  isGoldOnly: 0
-  isCubeOnly: 0
-  objectName: "\uC6B4\uC11D \uBCC0\uD658\uC7A5\uCE58"
-  description: "\uC6B4\uC11D\uC774 \uD669\uAE08\uC54C\uC744 \uB0B3\uC744 \uC904 \uB204\uAC00
-    \uC54C\uC558\uACA0\uC5B4\uC694?"
-  upgradeEffect: "\uBCC0\uD658\uB41C \uC624\uBE0C\uC81D\uD2B8 \uB808\uBCA8 \uC99D\uAC00"
-  cubePrice: 5000
-  goldenCubePrice: 50
-  prices: 88130000983a000030750000
 --- !u!65 &936467735
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40744,23 +40169,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4d832278b190421e8a2402bc55159cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 0}
-  inactiveMesh: {fileID: 0}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 1
-  blinkOnStart: 0
-  maxLevel: 3
-  isCollector: 0
-  isGoldOnly: 0
-  isCubeOnly: 0
-  objectName: "\uBD88\uC548\uC815\uD55C \uCC28\uC6D0\uBD80\uD488"
-  description: "\uC218\uC2ED\uAC1C \uCC28\uC6D0\uC5D0\uC11C \uBD80\uD488\uB4E4\uC774
-    \uC3DF\uC544\uC9D1\uB2C8\uB2E4."
-  upgradeEffect: "\uCC28\uC6D0 \uBD88\uC548\uC815\uC131 \uC99D\uAC00"
-  cubePrice: 5000
-  goldenCubePrice: 50
-  prices: dc0500009411000028230000
 --- !u!65 &956016445
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40982,12 +40390,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f71d117628a204ff6aaacf14aa800d56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  getEffect: {fileID: 298288788}
-  effectAmountText: {fileID: 256755161}
-  moveTo: -50
-  moveDuration: .25
-  showDuration: 2
-  offset: 30
 --- !u!114 &966334537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41164,11 +40566,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 518619572cf874c74a8f7c73fd8c80bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: "\uC288\uD37C\uCEA3"
-  price: 500
-  rarity: Uncommon
-  description: "\uC288\uD37C\uD788\uD2B8 \uAC8C\uC774\uC9C0 \uCD94\uAC00 \uD68D\uB4DD"
-  description2: 
 --- !u!114 &975181080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41180,7 +40577,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a85fac517d0f4429a3d297b002d82fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moreSuperheatRate: 20
 --- !u!1 &976401522
 GameObject:
   m_ObjectHideFlags: 0
@@ -41371,11 +40767,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a1e6a71ab2045f48fec3dd5a3ab696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isCollector: 0
-  combined: 0
-  activeMesh: {fileID: 4300000, guid: 3f7496f0efaad46e2abd0228d36dbbcd, type: 3}
-  activeMaterial: {fileID: 2100000, guid: cce705c6eab1948f29a242d1944cf636, type: 2}
-  activeMaterial2: {fileID: 0}
 --- !u!1 &980455320
 GameObject:
   m_ObjectHideFlags: 0
@@ -41415,22 +40806,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45d9cde9be26d054c8f715507863ee3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  phaseStars: {fileID: 155100441}
-  phaseStarPrefab: {fileID: 178956, guid: 04fbb3727378e41e081127391a3b6d69, type: 2}
-  distanceBetweenStars: 50
-  startScale: .100000001
-  largeScale: 1.20000005
-  smallScale: .600000024
-  changeTime: .100000001
-  progressPerSecond: 10
-  progressPerCube: .5
-  progressChangeSpeed: 5
-  npm: {fileID: 1991538117}
-  asm: {fileID: 1991538112}
-  sam: {fileID: 1991538121}
-  dem: {fileID: 1991538123}
-  blm: {fileID: 1991538108}
-  now: 0
 --- !u!1 &980972349
 GameObject:
   m_ObjectHideFlags: 0
@@ -42694,13 +42069,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fb517efa166c4343b51c913c420ca26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 4300062, guid: 7d4e33b83f6a046ab845e77e3044ffcc, type: 3}
-  inactiveMesh: {fileID: 4300072, guid: 7d4e33b83f6a046ab845e77e3044ffcc, type: 3}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 1
-  blinkOnStart: 0
-  controlMethod: LR
 --- !u!65 &1000076677
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42858,14 +42226,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e68bb61d5fb37471abfa0af9578835a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 0}
-  inactiveMesh: {fileID: 0}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 1
-  blinkOnStart: 0
-  selectionLimit: 0
-  hasSelection: 0
 --- !u!33 &1007294946
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -43023,12 +42383,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d66e24bec4c2140e497103a561f77585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  widthOffset: 110
-  heightOffset: 110
-  scrollTarget: {fileID: 1276675653}
-  tipsTransform: {fileID: 1498015742}
-  tipPrefab: {fileID: 107586, guid: be4403f77544444f0834f76deb440c2d, type: 2}
-  spaceBetween: 20
 --- !u!1 &1012877375
 GameObject:
   m_ObjectHideFlags: 0
@@ -44254,12 +43608,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86697ed42d96b4d60a7b2614db27c413, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 0}
-  inactiveMesh: {fileID: 0}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 1
-  blinkOnStart: 0
 --- !u!1 &1015476138
 GameObject:
   m_ObjectHideFlags: 0
@@ -44410,9 +43758,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 687bf7285ef564790b5ca5744747a0cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cubeYouHave: {fileID: 545979715}
-  goldenCubeYouHave: {fileID: 1928310596}
-  createPrice: f4010000e8030000c40900008813000010270000
 --- !u!1 &1026162787
 GameObject:
   m_ObjectHideFlags: 0
@@ -44566,10 +43911,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8de7fa89bbbb845eeb2d683f3ce00bda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPosX: 0
-  offset: 1
-  sign: -1
-  scale: 5
 --- !u!1 &1031383480
 GameObject:
   m_ObjectHideFlags: 0
@@ -44649,11 +43990,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a1e6a71ab2045f48fec3dd5a3ab696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isCollector: 0
-  combined: 0
-  activeMesh: {fileID: 4300000, guid: f39d71766ac064ad59ed0406290c15e7, type: 3}
-  activeMaterial: {fileID: 2100000, guid: 3938853983c9c4e4da1a631085c00dcd, type: 2}
-  activeMaterial2: {fileID: 0}
 --- !u!1 &1035691582
 GameObject:
   m_ObjectHideFlags: 0
@@ -46078,7 +45414,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 603a1c64f438d4bf38712e3180e53359, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallax: 120
 --- !u!23 &1053395829
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -47584,11 +46919,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 518619572cf874c74a8f7c73fd8c80bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: "\uD2F0\uB77C\uB178"
-  price: 500
-  rarity: Uncommon
-  description: "\uC288\uD37C\uD788\uD2B8 \uC9C0\uC18D\uC2DC\uAC04 \uC99D\uAC00"
-  description2: 
 --- !u!23 &1068398462
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -47633,7 +46963,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a99939ee330d4464e937e21d69f087c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  howLonger: 20
 --- !u!1 &1071346379
 GameObject:
   m_ObjectHideFlags: 0
@@ -47898,16 +47227,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b6b72a783c0346e89a31ac5f73b360e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menusOverlay: {fileID: 1839461442}
-  backButton: {fileID: 1410312520}
-  menuButtonsLeft: {fileID: 85813355}
-  menuButtonsRight: {fileID: 2006899117}
-  idleUI: {fileID: 1817731073}
-  inGameUI: {fileID: 2134279968}
-  beforeIdleUI: {fileID: 1366368659}
-  barsCanvas: {fileID: 1289803595}
-  beforeIdle: {fileID: 1366368665}
-  UITouchSound: {fileID: 8300000, guid: 3b7a828a646174088aa48ee1db9c439c, type: 3}
 --- !u!1 &1086984976
 GameObject:
   m_ObjectHideFlags: 0
@@ -49328,24 +48647,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4d832278b190421e8a2402bc55159cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 0}
-  inactiveMesh: {fileID: 0}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 1
-  blinkOnStart: 0
-  maxLevel: 11
-  isCollector: 1
-  isGoldOnly: 0
-  isCubeOnly: 1
-  objectName: "\uC77C\uBC18 \uD050\uBE0C \uCF5C\uB809\uD130"
-  description: "\uB85C\uBD07\uB4E4\uC774 \uD050\uBE0C\uB97C \uC800\uC7A5\uD558\uB294
-    \uC7A5\uCE58\uC785\uB2C8\uB2E4. \uC5C5\uADF8\uB808\uC774\uB4DC\uD574\uC11C \uCD94\uAC00
-    \uD050\uBE0C \uBCF4\uB108\uC2A4\uB97C \uC5BB\uC73C\uC138\uC694."
-  upgradeEffect: "\uD68D\uB4DD \uD050\uBE0C \uC99D\uAC00\uB7C9 5% \uCD94\uAC00"
-  cubePrice: 5000
-  goldenCubePrice: 50
-  prices: f4010000e8030000dc050000d0070000c4090000b80b0000ac0d0000a00f000094110000881300007c150000
 --- !u!65 &1109363285
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51093,11 +50394,6 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!198 &1160371282 stripped
-ParticleSystem:
-  m_PrefabParentObject: {fileID: 19838846, guid: 247f56b855b0645959846fad0b6e23f3,
-    type: 2}
-  m_PrefabInternal: {fileID: 728079726}
 --- !u!23 &1161190012
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -51202,11 +50498,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a1e6a71ab2045f48fec3dd5a3ab696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isCollector: 0
-  combined: 0
-  activeMesh: {fileID: 4300000, guid: 99c536482099e4321adbbf652b96761e, type: 3}
-  activeMaterial: {fileID: 2100000, guid: 6ecdb2f0a1d3c465f9f1b3a9c162a5c8, type: 2}
-  activeMaterial2: {fileID: 0}
 --- !u!1 &1165747846
 GameObject:
   m_ObjectHideFlags: 0
@@ -51548,18 +50839,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8be3b37f38ba0495aade5bbb342bd6f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 0}
-  inactiveMesh: {fileID: 0}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 0
-  blinkOnStart: 0
-  partsCollector: {fileID: 1270861830}
-  which: golden
-  cubes: {fileID: 1928310598}
-  notAffordableTextColor: {r: .513725519, g: .513725519, b: .513725519, a: 1}
-  priceText: {fileID: 1306473452}
-  icon: {fileID: 1881522958}
 --- !u!23 &1174462711
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -51693,11 +50972,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 518619572cf874c74a8f7c73fd8c80bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: "\uBAA8\uB85C\uACE0\uB85C"
-  price: 100
-  rarity: Common
-  description: 
-  description2: 
 --- !u!1 &1176685720
 GameObject:
   m_ObjectHideFlags: 0
@@ -53129,20 +52403,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43e1b707b98b9405bb7e958a9405d001, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  widthOffset: 110
-  heightOffset: 110
-  scrollTarget: {fileID: 1784680383}
-  admin: 1
-  bestHeading: {fileID: 1071346381}
-  bestContents: {fileID: 716646325}
-  averageHeading: {fileID: 1317501677}
-  averageContents: {fileID: 173543267}
-  totalHeading: {fileID: 1616781280}
-  totalContents: {fileID: 1613798532}
-  adminHeading: {fileID: 464911262}
-  adminContents: {fileID: 675113418}
-  spaceBetweenHeadingAndContents: 15
-  spaceBetweenCategories: 20
 --- !u!114 &1195108145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53250,11 +52510,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 518619572cf874c74a8f7c73fd8c80bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: "\uC6B0\uC8FC\uBE44\uB2E8\uD138\uC950"
-  price: 500
-  rarity: Uncommon
-  description: "\uD050\uBE0C \uCD94\uAC00 \uD68D\uB4DD"
-  description2: 
 --- !u!23 &1196521605
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -53299,7 +52554,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092fd6f74960f4d74b2cf86c5e51ab18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moreCubes: 20
 --- !u!1 &1199078785
 GameObject:
   m_ObjectHideFlags: 0
@@ -53556,20 +52810,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a62c6a5306fa84f01ab4d83d47fc0cb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeObjectsMaterial: {fileID: 2100000, guid: 4d76e2e0337b74a838484fa9e6fd650b,
-    type: 2}
-  inactiveObjectsMaterial: {fileID: 2100000, guid: 73269cd7f59c840a6b04274f0e651637,
-    type: 2}
-  selectedObjectRotationSpeed: 150
-  selectButton: {fileID: 685215970}
-  unselectButton: {fileID: 620051370}
-  buyButtonByCube: {fileID: 1488355724}
-  buyButtonByGoldencube: {fileID: 1174462705}
-  objLevel: {fileID: 2137997658}
-  upgradeInfo: {fileID: 2098232689}
-  oneButtonOnlyPosition: 150
-  cubeOriginalPosition: 62
-  goldOriginalPosition: 245
 --- !u!1 &1212915751
 GameObject:
   m_ObjectHideFlags: 0
@@ -53597,15 +52837,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cae749938a971421a8cf3f3a99094da5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slots:
-  - {fileID: 849036391}
-  - {fileID: 579922202}
-  skills:
-  - {fileID: 706357633}
-  - {fileID: 1818839439}
-  - {fileID: 307617794}
-  - {fileID: 494443781}
-  - {fileID: 511581017}
 --- !u!4 &1212915753
 Transform:
   m_ObjectHideFlags: 0
@@ -53776,14 +53007,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e68bb61d5fb37471abfa0af9578835a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 0}
-  inactiveMesh: {fileID: 0}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 1
-  blinkOnStart: 0
-  selectionLimit: 2
-  hasSelection: 1
 --- !u!65 &1227587715
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53910,23 +53133,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4d832278b190421e8a2402bc55159cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 0}
-  inactiveMesh: {fileID: 0}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 1
-  blinkOnStart: 0
-  maxLevel: 3
-  isCollector: 0
-  isGoldOnly: 0
-  isCubeOnly: 0
-  objectName: "\uACE0\uC7A5\uB09C \uC790\uAE30 \uC7A5\uCE58"
-  description: "\uC774 \uC790\uAE30 \uC7A5\uCE58\uB294 \uC644\uC804\uD788 \uB9DB\uC774
-    \uAC14\uC2B5\uB2C8\uB2E4. \uD68D\uB4DD\uD574 \uC81C\uB300\uB85C \uC0AC\uC6A9\uD574\uBCF4\uC138\uC694."
-  upgradeEffect: "\uC601\uD5A5 \uBC94\uC704 \uC99D\uAC00"
-  cubePrice: 20000
-  goldenCubePrice: 200
-  prices: 102700003075000060ea0000
 --- !u!1 &1233271518
 GameObject:
   m_ObjectHideFlags: 0
@@ -55385,15 +54591,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c31ef49bbf66f462f9beaf7b58dd4df0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collecteffect: {fileID: 155359882}
-  particleeffect: {fileID: 544844248}
-  howManyCubesGet: {fileID: 108266, guid: 1afee8ce7a54f4af597a4df1a8e26203, type: 2}
-  cubesCount: {fileID: 589887826}
-  enchanted: {fileID: 2100000, guid: 65857a1546e444799b77fb96563e99e3, type: 2}
-  headFollowingSpeed: 150
-  maxEmission: 50
-  startOffset: 30
-  startEmission: 0
 --- !u!54 &1270861831
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -55574,12 +54771,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1b222984a7384038a7309ad9c408267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doNotShow: 0
-  conditionNotRequired: 1
-  showConditions: []
-  description: "\uCF64\uBCF4\uAC8C\uC774\uC9C0\uB294 \uD050\uBE0C\uB97C \uC5BB\uC744\uB54C
-    \uB9C8\uB2E4 \uC62C\uB77C\uAC00\uACE0, \uC77C\uC815\uC2DC\uAC04 \uD050\uBE0C\uB97C
-    \uC5BB\uC9C0 \uBABB\uD558\uBA74 \uC0AC\uB77C\uC9D1\uB2C8\uB2E4."
 --- !u!222 &1272642714
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -55633,22 +54824,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4d832278b190421e8a2402bc55159cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 0}
-  inactiveMesh: {fileID: 0}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 1
-  blinkOnStart: 0
-  maxLevel: 3
-  isCollector: 0
-  isGoldOnly: 0
-  isCubeOnly: 0
-  objectName: "\uAC1C\uC778\uC6A9 \uC21C\uAC04\uC774\uB3D9\uAE30"
-  description: "\uC124\uBA85"
-  upgradeEffect: "\uD30C\uB3D9 \uC0DD\uC131 \uBC94\uC704 \uC99D\uAC00"
-  cubePrice: 30000
-  goldenCubePrice: 300
-  prices: 204e000060ea0000c0d40100
 --- !u!65 &1272934743
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55778,11 +54953,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 486752, guid: 699a7667b2cee4564b40cfa293c9d3ad, type: 2}
   m_PrefabInternal: {fileID: 1282841666}
---- !u!198 &1282841668 stripped
-ParticleSystem:
-  m_PrefabParentObject: {fileID: 19880024, guid: 699a7667b2cee4564b40cfa293c9d3ad,
-    type: 2}
-  m_PrefabInternal: {fileID: 1282841666}
 --- !u!1 &1284365878
 GameObject:
   m_ObjectHideFlags: 0
@@ -55873,13 +55043,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 686212e7a972945beb15d31c59a10dff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 0}
-  inactiveMesh: {fileID: 0}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 0
-  blinkOnStart: 0
-  linkTo: http://google.com
 --- !u!4 &1285032819
 Transform:
   m_ObjectHideFlags: 0
@@ -56011,8 +55174,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85bd37e8eaf3c4f02a3d2a0f1a640b6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 91418582}
-  copyRotation: 0
 --- !u!1 &1296024062
 GameObject:
   m_ObjectHideFlags: 0
@@ -56059,13 +55220,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d44be1f35b604dd5b78103a86457207, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  guageForEffect: 0
-  startScale: .100000001
-  stayScale: 1
-  smallScale: .600000024
-  largeScale: 1.20000005
-  changeTime: .100000001
-  stayTime: 1
 --- !u!114 &1296024065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56153,8 +55307,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85bd37e8eaf3c4f02a3d2a0f1a640b6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 91418582}
-  copyRotation: 0
 --- !u!1 &1300313091
 GameObject:
   m_ObjectHideFlags: 0
@@ -56444,24 +55596,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8af9bb3f711cd4f0f9510c1913efe83c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 4300048, guid: 7d4e33b83f6a046ab845e77e3044ffcc, type: 3}
-  inactiveMesh: {fileID: 4300098, guid: 7d4e33b83f6a046ab845e77e3044ffcc, type: 3}
-  blinkingMesh: {fileID: 4300050, guid: 7d4e33b83f6a046ab845e77e3044ffcc, type: 3}
-  blinkingSeconds: .400000006
-  playTouchSound: 0
-  blinkOnStart: 1
-  description: "\uD669\uAE08\uD050\uBE0C \uC5BB\uAE30"
-  requiredSpace: 1
-  picked: 0
-  popping: 1
-  startScale: 4
-  popScale: 1.5
-  changeTime: .150000006
-  goldenCubeText: {fileID: 2127701742}
-  goldenCubePerAds: 30
-  showAdsPerGame: 10
-  showAdsPerMinutes: 10
-  dailyLimit: 5
 --- !u!1 &1315669336
 GameObject:
   m_ObjectHideFlags: 0
@@ -56548,7 +55682,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 193d0a3969d7846999410bfeb4e7f70a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controlMethod: LR
 --- !u!1 &1316523505
 GameObject:
   m_ObjectHideFlags: 0
@@ -56661,22 +55794,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4d832278b190421e8a2402bc55159cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 0}
-  inactiveMesh: {fileID: 0}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 1
-  blinkOnStart: 0
-  maxLevel: 3
-  isCollector: 0
-  isGoldOnly: 0
-  isCubeOnly: 0
-  objectName: "\uD050\uBE0C \uC800\uC7A5\uACE0"
-  description: "\uC548\uC5D0 \uC800\uC7A5\uB41C \uD050\uBE0C\uB97C \uC804\uBD80 \uBA39\uC5B4\uBD05\uC2DC\uB2E4."
-  upgradeEffect: "\uD050\uBE0C \uC800\uC7A5\uB7C9 \uC99D\uAC00"
-  cubePrice: 5000
-  goldenCubePrice: 50
-  prices: b80b00002823000050460000
 --- !u!65 &1316902508
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -56832,7 +55949,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e637e0fd30eb4b2997b8851d1c172bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  followingSpeed: 720
 --- !u!114 &1322196948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56966,13 +56082,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d44be1f35b604dd5b78103a86457207, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  guageForEffect: 50
-  startScale: .100000001
-  stayScale: 1
-  smallScale: .600000024
-  largeScale: 1.20000005
-  changeTime: .100000001
-  stayTime: 1
 --- !u!114 &1330310864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57049,13 +56158,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bb3aba27cb714482bb8d5c9314be404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 4300086, guid: 7d4e33b83f6a046ab845e77e3044ffcc, type: 3}
-  inactiveMesh: {fileID: 4300096, guid: 7d4e33b83f6a046ab845e77e3044ffcc, type: 3}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 1
-  blinkOnStart: 0
-  settingName: 
 --- !u!23 &1339036439
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -57389,35 +56491,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2620d6b03b9a440de8b37dc373d045aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceSuperheat: 0
-  superheatMover: {fileID: 98551109}
-  powerBoostBackground: {fileID: 861830372}
-  superImage: {fileID: 1927798533}
-  heatImage: {fileID: 1147100448}
-  afterImagePrefab: {fileID: 197148, guid: 548fc754942dd4391ad89bb54cc0e9c4, type: 2}
-  afterImageCount: 50
-  startSuperPos: -895
-  slowSuperPos: 5
-  fastSuperPos: 45
-  endSuperPos: 945
-  startHeatPos: 945
-  slowHeatPos: 45
-  fastHeatPos: 5
-  endHeatPos: -895
-  superheatFastDuration: .100000001
-  superheatSlowDuration: .800000012
-  shakeDuration: .5
-  shakeAmount: 4
-  boostDuration: 6
-  baseSpeed: 200
-  boosterSpeedUpAmount: 250
-  maxBoosterSpeed: 400
-  skill: {fileID: 224404663}
-  guageShell: {fileID: 921626863}
-  maxGuage: 1000
-  guagePerCube: .5
-  guageSpeedStandard: 600
-  showHeatWhenLargerThan: 100
 --- !u!4 &1358686915
 Transform:
   m_ObjectHideFlags: 0
@@ -57543,23 +56616,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64eb87d006c3148ccb16a2f6e9e588d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 0}
-  inactiveMesh: {fileID: 0}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 0
-  blinkOnStart: 0
-  description: "\uAC8C\uC784\uC744 \uD3C9\uAC00\uD574\uC8FC\uC138\uC694"
-  requiredSpace: 1
-  picked: 0
-  popping: 1
-  startScale: 4
-  popScale: 1.5
-  changeTime: .150000006
-  goldenCubeText: {fileID: 2127701742}
-  showPerGame: 3
-  dailyLimit: 3
-  goldenCubesGet: 30
 --- !u!65 &1365653572
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -57710,24 +56766,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88555aff21104292b5e41b3696b84a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flyingCharacters: {fileID: 565486537}
-  spawnManager: {fileID: 1991538111}
-  titleFilter: {fileID: 1330183105}
-  title: {fileID: 723740914}
-  powerBoostUI: {fileID: 1357137652}
-  copyright: {fileID: 1374463138}
-  character: {fileID: 1199078785}
-  totalCubes: {fileID: 24498669}
-  characterMovingDuration: .600000024
-  characterMoveStart: -1000
-  characterStayDuration: .200000003
-  tips: {fileID: 1498015743}
-  tipShowAfter: .5
-  tipAlphaChangeDuration: .600000024
-  stayDuration: 1
-  filterChangingDuration: .300000012
-  movingDuration: .600000024
-  boosterStayDuration: .300000012
 --- !u!1 &1367745759
 GameObject:
   m_ObjectHideFlags: 0
@@ -59044,13 +58082,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24393773a0700427ab24c22a07c6ad4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 4300080, guid: 7d4e33b83f6a046ab845e77e3044ffcc, type: 3}
-  inactiveMesh: {fileID: 4300092, guid: 7d4e33b83f6a046ab845e77e3044ffcc, type: 3}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 1
-  blinkOnStart: 0
-  settingName: MuteAudio
 --- !u!23 &1374786361
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -60546,15 +59577,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23ae3153f0d004244a807408cd11b281, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 0}
-  inactiveMesh: {fileID: 0}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 1
-  blinkOnStart: 0
-  menus: {fileID: 1082642569}
-  changeManager: {fileID: 91418591}
-  playAgain: {fileID: 1431479375}
 --- !u!65 &1405439388
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -60717,13 +59739,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d21e7edfe69b045dfa22b4656a315cc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 0}
-  inactiveMesh: {fileID: 0}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 1
-  blinkOnStart: 0
-  menus: {fileID: 1082642569}
 --- !u!1 &1412352767
 GameObject:
   m_ObjectHideFlags: 0
@@ -60971,11 +59986,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a1e6a71ab2045f48fec3dd5a3ab696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isCollector: 0
-  combined: 1
-  activeMesh: {fileID: 0}
-  activeMaterial: {fileID: 2100000, guid: 4712d1b816d704dd0a304b9acf9fbde3, type: 2}
-  activeMaterial2: {fileID: 2100000, guid: a991a13fd6b4f48ab9ca3122e6805bea, type: 2}
 --- !u!1 &1421179929
 GameObject:
   m_ObjectHideFlags: 0
@@ -61068,40 +60078,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cbdb1cc4506244b1a64d5a01760786f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menus: {fileID: 1082642569}
-  beforeIdle: {fileID: 1366368665}
-  bonusCount: {fileID: 1630724120}
-  goldCubesCount: {fileID: 966334536}
-  showPlayerExplosionDuring: 1.5
-  playerExplosion: {fileID: 1917855184}
-  debrisTransform: {fileID: 489364, guid: 6ed2e118b4a8f453d8102dd45ef6cb8f, type: 2}
-  characterDebris: {fileID: 175436, guid: fdaceadeb32cf479fbbf966feb959836, type: 2}
-  characterDebrisPool: []
-  debrisTumble: 30
-  numDebrisSpawn: 14
-  minDebrisSize: .5
-  maxDebrisSize: 1
-  minDebrisSpeed: 100
-  maxDebrisSpeed: 200
-  minSizeAfterBreak: 5
-  maxSizeAfterBreak: 10
-  destroyLargeAfter: 1
-  destroySmallAfter: 4
-  contactCollider: {fileID: 1298175622}
-  barsCanvas: {fileID: 1289803595}
-  partsCollector: {fileID: 1270861827}
-  inputHandler: {fileID: 1801634119}
-  inGameUI: {fileID: 2134279968}
-  gameOverUI: {fileID: 868146740}
-  gameOverBannerPrefab: {fileID: 189736, guid: 8e7e4a602cfdf4c4db0fd73a1c8f11ab, type: 2}
-  bannerButtonsList: {fileID: 459535541}
-  randomBannerButtonsList: {fileID: 1015476139}
-  bannerPos:
-  - -20
-  - -130
-  gameOverButtons: {fileID: 741547521}
-  gameOverShakeDuration: 1
-  gameOverShakeAmount: 8
 --- !u!4 &1422286123
 Transform:
   m_ObjectHideFlags: 0
@@ -62309,9 +61285,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af0e08c3844d8484cb160fba782920b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeTo: Monster
-  effectName: Monster
-  targetScale: 0
 --- !u!1 &1427373338
 GameObject:
   m_ObjectHideFlags: 0
@@ -62359,7 +61332,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc688e76308ce4e2ea67b6162544a877, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  which: Cubes
 --- !u!114 &1427373341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62482,13 +61454,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1589bcaa1743f460f865dc385e5b504b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 0}
-  inactiveMesh: {fileID: 0}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 0
-  blinkOnStart: 0
-  beforeIdle: {fileID: 1366368665}
 --- !u!1 &1447138049
 GameObject:
   m_ObjectHideFlags: 0
@@ -63887,10 +62852,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8de7fa89bbbb845eeb2d683f3ce00bda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPosX: 0
-  offset: 1
-  sign: -1
-  scale: 5
 --- !u!1 &1474189756
 GameObject:
   m_ObjectHideFlags: 0
@@ -66291,18 +65252,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8be3b37f38ba0495aade5bbb342bd6f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 4300058, guid: 7d4e33b83f6a046ab845e77e3044ffcc, type: 3}
-  inactiveMesh: {fileID: 0}
-  blinkingMesh: {fileID: 4300066, guid: 7d4e33b83f6a046ab845e77e3044ffcc, type: 3}
-  blinkingSeconds: .400000006
-  playTouchSound: 0
-  blinkOnStart: 0
-  partsCollector: {fileID: 0}
-  which: normal
-  cubes: {fileID: 545979717}
-  notAffordableTextColor: {r: .513725519, g: .513725519, b: .513725519, a: 1}
-  priceText: {fileID: 685884384}
-  icon: {fileID: 57842499}
 --- !u!65 &1488355727
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -66641,12 +65590,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86697ed42d96b4d60a7b2614db27c413, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 0}
-  inactiveMesh: {fileID: 0}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 1
-  blinkOnStart: 0
 --- !u!65 &1505273306
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -68245,9 +67188,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af0e08c3844d8484cb160fba782920b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeTo: Metal
-  effectName: Metal
-  targetScale: 0
 --- !u!1 &1550390193
 GameObject:
   m_ObjectHideFlags: 0
@@ -68295,24 +67235,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4d832278b190421e8a2402bc55159cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 0}
-  inactiveMesh: {fileID: 0}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 1
-  blinkOnStart: 0
-  maxLevel: 3
-  isCollector: 1
-  isGoldOnly: 1
-  isCubeOnly: 0
-  objectName: "\uAC15\uD654 \uD050\uBE0C \uCF5C\uB809\uD130"
-  description: "\uACE8\uB4DC \uD050\uBE0C\uC758 \uD798\uC73C\uB85C \uB354\uC6B1 \uAC15\uD654\uB41C
-    \uCF5C\uB809\uD130 \uC785\uB2C8\uB2E4. \uCF5C\uB809\uD130\uC758 \uC0DD\uAE40\uC0C8\uAC00
-    \uBC14\uB00C\uBA70, \uD68D\uB4DD \uD050\uBE0C\uB7C9\uC774 50% \uC99D\uAC00\uD569\uB2C8\uB2E4."
-  upgradeEffect: "\uD68D\uB4DD \uD050\uBE0C 50% \uC99D\uAC00"
-  cubePrice: 10000
-  goldenCubePrice: 100
-  prices: 88130000983a000030750000
 --- !u!65 &1550390196
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -69656,13 +68578,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d44be1f35b604dd5b78103a86457207, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  guageForEffect: 25
-  startScale: .100000001
-  stayScale: 1
-  smallScale: .600000024
-  largeScale: 1.20000005
-  changeTime: .100000001
-  stayTime: 1
 --- !u!1 &1563434012
 GameObject:
   m_ObjectHideFlags: 0
@@ -70871,14 +69786,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b79e30ec2f8214d5fbdb9949030b9f5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 0}
-  inactiveMesh: {fileID: 0}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 1
-  blinkOnStart: 0
-  pauseFilter: {fileID: 537339453}
-  pauseStatus: {fileID: 510864196}
 --- !u!114 &1567307132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70973,12 +69880,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04d1e4ff83e344c2ab093563cdcc4568, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 0}
-  inactiveMesh: {fileID: 0}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 1
-  blinkOnStart: 0
 --- !u!23 &1576182590
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -71109,11 +70010,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1b222984a7384038a7309ad9c408267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doNotShow: 0
-  conditionNotRequired: 1
-  showConditions: []
-  description: "\uC5D0\uB108\uC9C0\uB294 \uD68D\uB4DD\uD55C \uD050\uBE0C \uAC1C\uC218\uC5D0
-    \uBE44\uB840\uD558\uC5EC \uD68C\uBCF5\uB429\uB2C8\uB2E4."
 --- !u!222 &1579701410
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -72594,11 +71490,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 518619572cf874c74a8f7c73fd8c80bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: "\uC218\uC5FC\uAC1C\uAD6C\uB9AC"
-  price: 100
-  rarity: Common
-  description: 
-  description2: 
 --- !u!23 &1625834677
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -73147,11 +72038,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 518619572cf874c74a8f7c73fd8c80bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: "\uC6B0\uC6B8\uD55C \uB098\uBE44"
-  price: 100
-  rarity: Common
-  description: 
-  description2: 
 --- !u!1 &1666786691
 GameObject:
   m_ObjectHideFlags: 0
@@ -73450,22 +72336,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f3e3858ac9114dafacd77c84efae7ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 0}
-  inactiveMesh: {fileID: 0}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 1
-  blinkOnStart: 0
-  description: "\uCE90\uB9AD\uD130 \uBF51\uAE30"
-  requiredSpace: 1
-  picked: 0
-  popping: 1
-  startScale: 4
-  popScale: 1.5
-  changeTime: .150000006
-  createMenu: {fileID: 1025396004}
-  menusOverlay: {fileID: 1839461442}
-  showMoreUntil: 2
 --- !u!33 &1674791326
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -74697,11 +73567,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 518619572cf874c74a8f7c73fd8c80bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: "\uC624\uC5FC\uB41C \uAC8C"
-  price: 500
-  rarity: Uncommon
-  description: "\uC5D0\uB108\uC9C0 \uC18C\uBAA8 \uAC10\uC18C"
-  description2: 
 --- !u!114 &1680629683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74713,7 +73578,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d637232d7dd0b4eb1aa9020e06ab8dcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  efficiency: 20
 --- !u!1 &1683774461
 GameObject:
   m_ObjectHideFlags: 0
@@ -74913,13 +73777,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bc1722405f6b4050b6ee2caaa70850a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainIngameVolume: .349999994
-  mainSmallVolume: .100000001
-  mainOriginalPitch: 1
-  mainPitchIncrease: .0500000007
-  powerBoostVolumeOn: .5
-  volumeChangeDuration: .5
-  powerBoostStartOn: 5
 --- !u!1 &1686488911
 GameObject:
   m_ObjectHideFlags: 0
@@ -74996,14 +73853,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8ce36ff7b01b46f095eee456f4da645, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  followingSpeed: 360
-  topView: 1
-  x_interPolate_base: 40
-  z_interPolate_base: 60
-  maxTiltAmount: 30
-  tiltDuration: .300000012
-  tiltBackDuration: .200000003
-  currentAngle: 0
 --- !u!1 &1698560316
 GameObject:
   m_ObjectHideFlags: 0
@@ -76684,7 +75533,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed32fde79d527420193b811ab198bd84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
 --- !u!1 &1743083059
 GameObject:
   m_ObjectHideFlags: 0
@@ -77981,7 +76829,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 603a1c64f438d4bf38712e3180e53359, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallax: 180
 --- !u!23 &1767020066
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -78103,23 +76950,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4d832278b190421e8a2402bc55159cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 0}
-  inactiveMesh: {fileID: 0}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 1
-  blinkOnStart: 0
-  maxLevel: 3
-  isCollector: 0
-  isGoldOnly: 0
-  isCubeOnly: 0
-  objectName: "\uAC15\uCCA0 \uBC30\uD130\uB9AC"
-  description: "\uBAA8\uB4E0 \uAC78 \uBD80\uC234\uBC84\uB9B4 \uC218 \uC788\uC2B5\uB2C8\uB2E4.
-    \uBE14\uB799\uD640\uB9CC \uBE7C\uACE0\uC694."
-  upgradeEffect: "\uD30C\uAD34\uC2DC \uBCF4\uB108\uC2A4 \uD050\uBE0C \uC99D\uAC00"
-  cubePrice: 5000
-  goldenCubePrice: 50
-  prices: 88130000983a000030750000
 --- !u!1 &1768431852
 GameObject:
   m_ObjectHideFlags: 0
@@ -78232,11 +77062,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a1e6a71ab2045f48fec3dd5a3ab696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isCollector: 0
-  combined: 0
-  activeMesh: {fileID: 4300000, guid: 0453fa5f511ed45b190f7fedaaae57bb, type: 3}
-  activeMaterial: {fileID: 2100000, guid: acd4d7ae9e95c4d74913f28e2ad23e9c, type: 2}
-  activeMaterial2: {fileID: 0}
 --- !u!33 &1772547526
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -79778,11 +78603,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33243e08b60ecb548ba7b3d6944ba969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boundary: {fileID: 892369440}
-  beforeIdle: {fileID: 1366368665}
-  spawnManager: {fileID: 1991538111}
-  menus: {fileID: 1082642569}
-  pause: {fileID: 1567307131}
 --- !u!114 &1801634120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79794,8 +78614,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85bd37e8eaf3c4f02a3d2a0f1a640b6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 91418582}
-  copyRotation: 0
 --- !u!65 &1801634121
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -81040,30 +79858,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87e763094a5a740ea815cd373edb85d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 0}
-  inactiveMesh: {fileID: 0}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 1
-  blinkOnStart: 0
-  description: "\uBB34\uB8CC \uBCF4\uC0C1"
-  requiredSpace: 1
-  picked: 0
-  popping: 1
-  startScale: 4
-  popScale: 1.5
-  changeTime: .150000006
-  goldenCubeText: {fileID: 2127701742}
-  minReward: 10
-  maxReward: 50
-  nextRewardMinutes:
-  - 1
-  - 3
-  - 5
-  - 30
-  - 60
-  - 180
-  - 360
 --- !u!65 &1815077429
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -81260,8 +80054,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7ff8f4bfc1e347638d12c895c936bc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchToStart: {fileID: 135970117}
-  blinkingSeconds: .600000024
 --- !u!1 &1818839437
 GameObject:
   m_ObjectHideFlags: 0
@@ -81301,19 +80093,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 317dfa44da1d849459b70f7d3ae4ddf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillObject: {fileID: 1973202187}
-  useSkillEffect: {fileID: 1967867617}
-  duration: 4
-  coolTime: 16
-  level: 0
-  subRatio: 20
-  laserShootDuration: .100000001
-  transformDuration: .200000003
-  transformLaser: {fileID: 187434, guid: f6e1add9fecea448c8755b2fd2af5cd5, type: 2}
-  laserPool: []
-  transformParticle: {fileID: 192076, guid: 71f31b91d7b964538adaaf9145237778, type: 2}
-  particlePool: []
-  laserAmount: 10
 --- !u!1 &1820818981
 GameObject:
   m_ObjectHideFlags: 0
@@ -81360,13 +80139,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d44be1f35b604dd5b78103a86457207, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  guageForEffect: 25
-  startScale: .100000001
-  stayScale: 1
-  smallScale: .600000024
-  largeScale: 1.20000005
-  changeTime: .100000001
-  stayTime: 1
 --- !u!114 &1820818984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81439,12 +80211,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1b222984a7384038a7309ad9c408267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doNotShow: 0
-  conditionNotRequired: 0
-  showConditions:
-  - Monster
-  description: "\uBAAC\uC2A4\uD130\uAC00 \uC57D\uD574\uC9C0\uBA74 \uAC00\uAE4C\uC774
-    \uAC00\uC11C \uD0D1\uC2B9\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
 --- !u!222 &1827984786
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -85428,16 +84194,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc4c3bc4f330044f4a3ada94129c8dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 0}
-  inactiveMesh: {fileID: 0}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 1
-  blinkOnStart: 0
-  goldenCubes: {fileID: 1928310598}
-  notAffordableTextColor: {r: .513725519, g: .513725519, b: .513725519, a: 1}
-  priceText: {fileID: 335624708}
-  icon: {fileID: 1467960309}
 --- !u!82 &1873613236
 AudioSource:
   m_ObjectHideFlags: 0
@@ -85743,10 +84499,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8de7fa89bbbb845eeb2d683f3ce00bda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPosX: -50
-  offset: .5
-  sign: -1
-  scale: 5
 --- !u!1 &1882991373
 GameObject:
   m_ObjectHideFlags: 0
@@ -85887,11 +84639,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a1e6a71ab2045f48fec3dd5a3ab696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isCollector: 1
-  combined: 0
-  activeMesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-  activeMaterial: {fileID: 2100000, guid: 57c291759789547469acdc8b3ccd4364, type: 2}
-  activeMaterial2: {fileID: 0}
 --- !u!33 &1891564017
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -87052,13 +85799,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d44be1f35b604dd5b78103a86457207, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  guageForEffect: 25
-  startScale: .100000001
-  stayScale: 1
-  smallScale: .600000024
-  largeScale: 1.20000005
-  changeTime: .100000001
-  stayTime: 1
 --- !u!1 &1910017558
 GameObject:
   m_ObjectHideFlags: 0
@@ -88325,11 +87065,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a1e6a71ab2045f48fec3dd5a3ab696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isCollector: 0
-  combined: 0
-  activeMesh: {fileID: 4300000, guid: 23604ec780ae74faebe91c59144b2055, type: 3}
-  activeMaterial: {fileID: 2100000, guid: 1d4dd41d737f447cb89a363b9474c644, type: 2}
-  activeMaterial2: {fileID: 0}
 --- !u!23 &1918549632
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -88562,23 +87297,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4d832278b190421e8a2402bc55159cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 0}
-  inactiveMesh: {fileID: 0}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 1
-  blinkOnStart: 0
-  maxLevel: 3
-  isCollector: 0
-  isGoldOnly: 0
-  isCubeOnly: 0
-  objectName: "\uBB34\uC9C0\uAC1C \uB3C4\uB11B"
-  description: "\uC3D9 \uB4E4\uC5B4\uAC00 \uBB34\uC9C0\uAC1C \uAE38\uC744 \uB530\uB77C
-    \uB5A0\uB098\uC694."
-  upgradeEffect: "\uD0D1\uC2B9 \uD69F\uC218 \uC99D\uAC00"
-  cubePrice: 10000
-  goldenCubePrice: 100
-  prices: 88130000983a000030750000
 --- !u!65 &1927849503
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -88669,7 +87387,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc688e76308ce4e2ea67b6162544a877, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  which: GoldenCubes
 --- !u!114 &1928310599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88782,13 +87499,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d44be1f35b604dd5b78103a86457207, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  guageForEffect: 25
-  startScale: .100000001
-  stayScale: 1
-  smallScale: .600000024
-  largeScale: 1.20000005
-  changeTime: .100000001
-  stayTime: 1
 --- !u!114 &1932169727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89045,7 +87755,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed32fde79d527420193b811ab198bd84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
 --- !u!1 &1956163943
 GameObject:
   m_ObjectHideFlags: 0
@@ -89179,14 +87888,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b5a9a867dcc54d21bd17a5a83cc8bc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 4300084, guid: 7d4e33b83f6a046ab845e77e3044ffcc, type: 3}
-  inactiveMesh: {fileID: 4300094, guid: 7d4e33b83f6a046ab845e77e3044ffcc, type: 3}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 1
-  blinkOnStart: 0
-  settingName: BatterySaving
-  batterySavingFrameRate: 25
 --- !u!23 &1959054577
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -90573,8 +89274,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85bd37e8eaf3c4f02a3d2a0f1a640b6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 91418582}
-  copyRotation: 0
 --- !u!135 &1973202190
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -90605,19 +89304,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0cbc7232629343abb07905f13658bde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tfm: {fileID: 1818839439}
-  subs:
-  - ComboParts
-  - CubeDispenser
-  - SummonParts
-  - EMP
-  - RainbowDonuts
-  mains:
-  - SpecialParts
-  - Magnet
-  - Transformer
-  - Monster
-  - Dopple
 --- !u!114 &1973202193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90629,9 +89315,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af0e08c3844d8484cb160fba782920b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeTo: 
-  effectName: Polymorph
-  targetScale: 0
 --- !u!1 &1975792272
 GameObject:
   m_ObjectHideFlags: 0
@@ -90894,66 +89577,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 252e406bfcfe041a39a073c8ee7e45f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceSpawnAtStart: 0
-  objAmount: 1
-  objPool: []
-  objDestroyEffectPool: []
-  objEncounterEffectPool: []
-  objPrefab: {fileID: 145992, guid: 8dda1ea4426a74d1d9d0e64e93097cbd, type: 2}
-  objDestroyEffect: {fileID: 0}
-  objEncounterEffect: {fileID: 0}
-  objEncounterEffectForPlayer: {fileID: 1056094478}
-  strengthenPlayerEffect: {fileID: 0}
-  strength: 0
-  speed: 0
-  tumble: 5
-  minSpawnInterval: 8
-  maxSpawnInterval: 12
-  cubesByEncounter: 7
-  isNegative: 0
-  hasEncounterEffect: 0
-  shm: {fileID: 0}
-  instance: {fileID: 0}
-  gaugeWhenDestroy: 0
-  loseEnergyWhenEncounter: 0
-  bounceDuration: 0
-  hasLevel: 1
-  nameForLevel: RainbowDonuts
-  level: 0
-  player: {fileID: 0}
-  guageAmount: 7
-  chanceBase: 200
-  goldenRainbowMat: {fileID: 2100000, guid: bebff4c88f0cd4369b19c2281be089f8, type: 2}
-  goldenChance: 1
-  gcCount: {fileID: 966334536}
-  superRainbowMat: {fileID: 2100000, guid: 25ccef770527743988de0092eda0c38c, type: 2}
-  superChance: 10
-  guageAmountSuper: 50
-  isGolden: 0
-  isSuper: 0
-  blackholeGravityMask:
-    serializedVersion: 2
-    m_Bits: 8912896
-  rainbowRoadPrefab: {fileID: 173076, guid: af846d2fda9ca46229d31f23fc80dd18, type: 2}
-  roadPool: []
-  numRoadRidesPerLevel: 020000000300000005000000
-  speedPerRide: 84030000b6030000e80300001a0400004c0400007e040000
-  numRoadRides: 0
-  nextDonutRadius: 300
-  rotateDuring: .400000006
-  rotateAngularSpeed: 1000
-  ridingSpeed: 400
-  rainbowColors:
-  - {r: 1, g: 0, b: 0, a: .737254918}
-  - {r: .278431386, g: .137254909, b: 0, a: .737254918}
-  - {r: 1, g: 1, b: 0, a: .737254918}
-  - {r: 0, g: .180392161, b: .0235294122, a: .737254918}
-  - {r: .0313725509, g: .109803922, b: .909803927, a: .737254918}
-  - {r: 0, g: .0156862754, b: .188235298, a: .737254918}
-  - {r: .113725491, g: 0, b: 1, a: .737254918}
-  pitchStart: .899999976
-  pitchIncrease: .0500000007
-  superheatGuagePerRide: 20
 --- !u!114 &1991538106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90965,58 +89588,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0505b83e2366e4c30bf4b87b9ac88aa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceSpawnAtStart: 0
-  objAmount: 1
-  objPool: []
-  objDestroyEffectPool: []
-  objEncounterEffectPool: []
-  objPrefab: {fileID: 164108, guid: a6fcdda2fbd1d4fe0b8a15b6d19364a9, type: 2}
-  objDestroyEffect: {fileID: 158326, guid: 7a4903aebeaf1440d95d69b1daac37af, type: 2}
-  objEncounterEffect: {fileID: 0}
-  objEncounterEffectForPlayer: {fileID: 1384869938}
-  strengthenPlayerEffect: {fileID: 0}
-  strength: 0
-  speed: 0
-  tumble: 3
-  minSpawnInterval: 8
-  maxSpawnInterval: 12
-  cubesByEncounter: 5
-  isNegative: 0
-  hasEncounterEffect: 0
-  shm: {fileID: 0}
-  instance: {fileID: 0}
-  gaugeWhenDestroy: 0
-  loseEnergyWhenEncounter: 0
-  bounceDuration: 0
-  hasLevel: 1
-  nameForLevel: ComboParts
-  level: 0
-  player: {fileID: 0}
-  ptb: {fileID: 2048063065}
-  illusionLifeTime: 3
-  blinkBeforeDestroy: 1.20000005
-  showDurationStart: .349999994
-  showDurationDecrease: .100000001
-  emptyDurationStart: .150000006
-  emptyDurationDecrease: .0500000007
-  chanceBase: 100
-  goldenCubePrefab: {fileID: 117384, guid: 50f32b0368e944945a1410e747cc30ce, type: 2}
-  gcCount: {fileID: 966334536}
-  goldCubeDestroyParticle: {fileID: 116864, guid: c37d1083178cd45a3ac690547aa860e0,
-    type: 2}
-  goldCubesGet: 10
-  goldenCubeChance: 1
-  superheatPartPrefab: {fileID: 178724, guid: 10f2508b2281a4f35bc75f3e2629f9b7, type: 2}
-  superheatPartChance: 5
-  objPrefab_next: {fileID: 192146, guid: d357428246b5f4e5fb2b54651d371984, type: 2}
-  objNextPool: []
-  fullComboCountPerLevel: 020000000300000005000000
-  radius: 50
-  pitchStart: .400000006
-  pitchIncrease: .0500000007
-  nextInstance: {fileID: 0}
-  comboCount: 0
-  fullComboCount: 0
 --- !u!114 &1991538107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91028,55 +89599,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a67c4dbdff88749fdb99622d14e4f2dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceSpawnAtStart: 0
-  objAmount: 10
-  objPool: []
-  objDestroyEffectPool: []
-  objEncounterEffectPool: []
-  objPrefab: {fileID: 195232, guid: e7a68d4e24a084b4591ac3ac09bf2340, type: 2}
-  objDestroyEffect: {fileID: 190966, guid: 06a9d910a6ef7477eb37b2d7cddcfa88, type: 2}
-  objEncounterEffect: {fileID: 190966, guid: 06a9d910a6ef7477eb37b2d7cddcfa88, type: 2}
-  objEncounterEffectForPlayer: {fileID: 0}
-  strengthenPlayerEffect: {fileID: 0}
-  strength: 1
-  speed: 260
-  tumble: 10
-  minSpawnInterval: 1
-  maxSpawnInterval: 4
-  cubesByEncounter: 20
-  isNegative: 1
-  hasEncounterEffect: 0
-  shm: {fileID: 0}
-  instance: {fileID: 0}
-  gaugeWhenDestroy: 30
-  loseEnergyWhenEncounter: 30
-  bounceDuration: .300000012
-  hasLevel: 0
-  nameForLevel: 
-  level: 0
-  player: {fileID: 0}
-  meshes: {fileID: 420790, guid: 8853a505e8ec74ae8b1980f30e507d5c, type: 2}
-  biggerMeteroid: {fileID: 131752, guid: de76bd63e3eae4154a9433ec3ca2a12d, type: 2}
-  biggerPool: []
-  biggerMeteroidStrength: 2.5
-  biggerMeteroidSpeed: 320
-  biggerMeteroidTumble: 20
-  warnPlayerDuring: .5
-  spawnRadius: 200
-  scatterAmount: 0
-  lineDistance: 600
-  fallingStarWarningLinePrefab: {fileID: 125686, guid: d2657da8f1ab74d79b03574cca181388,
-    type: 2}
-  warningPool: []
-  biggerFallingStarWarningLinePrefab: {fileID: 153324, guid: c5a05dc8b0d8f476d8e01dbb22c7fc26,
-    type: 2}
-  biggerWarningPool: []
-  fallingStarSoundWarningPrefab: {fileID: 122456, guid: 32ffe4a364250467bba5659a4276cfd9,
-    type: 2}
-  soundWarningPool: []
-  shortenRespawnPer: 10
-  shortenRespawnAmount: .100000001
-  addSpeedAmount: 4
 --- !u!114 &1991538108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91088,39 +89610,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3d3774ac507d4255b324f7cde875a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceSpawnAtStart: 0
-  objAmount: 3
-  objPool: []
-  objDestroyEffectPool: []
-  objEncounterEffectPool: []
-  objPrefab: {fileID: 117910, guid: bbcd82bb603674de8b6cb8bab02b2b62, type: 2}
-  objDestroyEffect: {fileID: 0}
-  objEncounterEffect: {fileID: 0}
-  objEncounterEffectForPlayer: {fileID: 0}
-  strengthenPlayerEffect: {fileID: 0}
-  strength: 5
-  speed: 0
-  tumble: 5
-  minSpawnInterval: 20
-  maxSpawnInterval: 40
-  cubesByEncounter: 0
-  isNegative: 1
-  hasEncounterEffect: 0
-  shm: {fileID: 0}
-  instance: {fileID: 0}
-  gaugeWhenDestroy: 0
-  loseEnergyWhenEncounter: 100
-  bounceDuration: 0
-  hasLevel: 0
-  nameForLevel: 
-  level: 0
-  player: {fileID: 0}
-  gravity: 100
-  gravityToUser: 100
-  gravityScale: 10
-  reboundDuring: 2
-  shakeAmount: 3
-  reboundingSpeed: 1000
 --- !u!114 &1991538109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91132,67 +89621,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5edcb4094aa64a1cb46c7914f086d22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceSpawnAtStart: 0
-  objAmount: 1
-  objPool: []
-  objDestroyEffectPool: []
-  objEncounterEffectPool: []
-  objPrefab: {fileID: 187024, guid: b82e156aa96e74e6ab2dfef6ffcc7bcf, type: 2}
-  objDestroyEffect: {fileID: 133796, guid: 46089bf9ed3c44683abd20a8e16a7bee, type: 2}
-  objEncounterEffect: {fileID: 133796, guid: 46089bf9ed3c44683abd20a8e16a7bee, type: 2}
-  objEncounterEffectForPlayer: {fileID: 1830827565}
-  strengthenPlayerEffect: {fileID: 1426521849}
-  strength: 3
-  speed: 80
-  tumble: 5
-  minSpawnInterval: 20
-  maxSpawnInterval: 60
-  cubesByEncounter: 50
-  isNegative: 1
-  hasEncounterEffect: 1
-  shm: {fileID: 0}
-  instance: {fileID: 0}
-  gaugeWhenDestroy: 0
-  loseEnergyWhenEncounter: 30
-  bounceDuration: .150000006
-  hasLevel: 1
-  nameForLevel: Monster
-  level: 0
-  player: {fileID: 0}
-  speed_runaway: 60
-  speed_weaken: 20
-  spawnRadius: 200
-  detectDistance: 200
-  minLifeTime: 8
-  maxLifeTime: 12
-  weakenDuration: 5
-  shrinkUntil: .699999988
-  shrinkSpeed: 1
-  minimonPrefab: {fileID: 147296, guid: 3838bf770901046ef94d4e70d8066d50, type: 2}
-  minimonPool: []
-  minimonDestroyPool: []
-  numMinimonRespawn: 4
-  minimonAdditionalSpeed: 15
-  minimonStartTimeByMonster: .5
-  minimonStartTimeByPlayer: .5
-  minimonStartSpeedByMonster: 80
-  minimonStartSpeedByPlayer: 160
-  minimonTumble: 10
-  minimonLifeTime: 4
-  minimonLoseEnergy: 10
-  minimonBounceDuration: .0500000007
-  cubesWhenDestroyMinimon: 8
-  numsMinimonSpawn: 020000000300000004000000
-  numMinimonSpawn: 0
-  maxEnlargeCount: 50
-  enlargeScalePerMinimon: .00999999978
-  enlargeSpeedPerMinimon: 2
-  minimonDestroyEffect: {fileID: 115814, guid: d690697fab92647e6bea32f8fd206664, type: 2}
-  weakenedOutlineColor: {r: .0784313753, g: .909803927, b: .360784322, a: .533333361}
-  monsterFilter: {fileID: 1997391145}
-  indicator: {fileID: 2131139023}
-  monsterWarning: {fileID: 1881103577}
-  warningBlinkSeconds: .699999988
 --- !u!114 &1991538110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91204,65 +89632,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81cf703db72ac430e98bc24b14730d6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceSpawnAtStart: 0
-  objAmount: 1
-  objPool: []
-  objDestroyEffectPool: []
-  objEncounterEffectPool: []
-  objPrefab: {fileID: 189106, guid: bd32928049f4147048d0aafcb6011af6, type: 2}
-  objDestroyEffect: {fileID: 189290, guid: b3ce2718fb37c492f9d26f509fc35908, type: 2}
-  objEncounterEffect: {fileID: 0}
-  objEncounterEffectForPlayer: {fileID: 0}
-  strengthenPlayerEffect: {fileID: 0}
-  strength: 1
-  speed: 0
-  tumble: .5
-  minSpawnInterval: 8
-  maxSpawnInterval: 12
-  cubesByEncounter: 10
-  isNegative: 0
-  hasEncounterEffect: 0
-  shm: {fileID: 0}
-  instance: {fileID: 0}
-  gaugeWhenDestroy: 0
-  loseEnergyWhenEncounter: 0
-  bounceDuration: 0
-  hasLevel: 1
-  nameForLevel: CubeDispenser
-  level: 0
-  player: {fileID: 0}
-  brokenMeshes:
-  - {fileID: 4300002, guid: adeac5a1dbc17406db69c3e813cc95ef, type: 3}
-  - {fileID: 4300004, guid: adeac5a1dbc17406db69c3e813cc95ef, type: 3}
-  originalMesh: {fileID: 4300008, guid: 024abba1006f2417bb858a4d6fb882d5, type: 3}
-  fullComboCountPerLevel: 020000000300000005000000
-  destroyAfterPerLevel:
-  - 3.5
-  - 4
-  - 4.5
-  respawnInterval_min: 5
-  respawnInterval_max: 15
-  reboundDuring: .100000001
-  destroy: {fileID: 19849298, guid: b3ce2718fb37c492f9d26f509fc35908, type: 2}
-  pitchStart: .899999976
-  pitchIncrease: .0500000007
-  inactiveMat: {fileID: 2100000, guid: e2d9f194e69b341948a7f177b362529a, type: 2}
-  activeMat: {fileID: 2100000, guid: 46169ca8443124e49afb9e28615dd637, type: 2}
-  shakeDurationByHit: .300000012
-  shakeAmountByHit: .5
-  originalEmissionRate: 30
-  decreaseEmissionAmount: 0
-  fullComboCount: 0
-  chanceBase: 200
-  goldenActiveMat: {fileID: 2100000, guid: 5cb3f0efcb50c4eda849f9f15b436eff, type: 2}
-  goldenInactiveMat: {fileID: 2100000, guid: 91d86ee1c162044a5bb70697c616575d, type: 2}
-  goldenChance: 1
-  gcCount: {fileID: 966334536}
-  goldenCubeAmount: 10
-  superActiveMat: {fileID: 2100000, guid: 274ff44dcaa9b43aaa1b3762a585d88b, type: 2}
-  superInactiveMat: {fileID: 2100000, guid: c652fe12f3a8c4431907746ff149cfba, type: 2}
-  superChance: 10
-  guageAmountSuper: 50
 --- !u!114 &1991538111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91274,8 +89643,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4ef5f5fe3e9c4deab674825c79028e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minSpawnRadius: 200
-  maxSpawnRadius: 400
 --- !u!114 &1991538112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91287,45 +89654,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e0dc8edecfe45c4a6ff6485a3423b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceSpawnAtStart: 0
-  objAmount: 5
-  objPool: []
-  objDestroyEffectPool: []
-  objEncounterEffectPool: []
-  objPrefab: {fileID: 150936, guid: c12d22440072f4d81ae8465ddd7cc855, type: 2}
-  objDestroyEffect: {fileID: 131700, guid: 46d99a54bbdde47e88eb0e03dc80237c, type: 2}
-  objEncounterEffect: {fileID: 131700, guid: 46d99a54bbdde47e88eb0e03dc80237c, type: 2}
-  objEncounterEffectForPlayer: {fileID: 0}
-  strengthenPlayerEffect: {fileID: 0}
-  strength: 2
-  speed: 20
-  tumble: .5
-  minSpawnInterval: 0
-  maxSpawnInterval: 0
-  cubesByEncounter: 15
-  isNegative: 1
-  hasEncounterEffect: 0
-  shm: {fileID: 0}
-  instance: {fileID: 0}
-  gaugeWhenDestroy: 10
-  loseEnergyWhenEncounter: 60
-  bounceDuration: .200000003
-  hasLevel: 0
-  nameForLevel: 
-  level: 0
-  player: {fileID: 0}
-  brokenTumble: 30
-  minBrokenSpawn: 6
-  maxBrokenSpawn: 8
-  minBrokenSize: .5
-  maxBrokenSize: 1
-  minBrokenSpeed: 200
-  maxBrokenSpeed: 400
-  minSizeAfterBreak: 5
-  maxSizeAfterBreak: 10
-  destroyLargeAfter: .5
-  destroySmallAfter: 4
-  brokenMeshes: {fileID: 484650, guid: afcfdbb6ab4984dbdb7caea16971a310, type: 2}
 --- !u!114 &1991538113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91337,38 +89665,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d1c54e7a71bf4fc6be5112606b0eced, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceSpawnAtStart: 0
-  objAmount: 1
-  objPool: []
-  objDestroyEffectPool: []
-  objEncounterEffectPool: []
-  objPrefab: {fileID: 189520, guid: dccc40739d6254de9aaa62d3c75f9b0d, type: 2}
-  objDestroyEffect: {fileID: 158326, guid: 7a4903aebeaf1440d95d69b1daac37af, type: 2}
-  objEncounterEffect: {fileID: 0}
-  objEncounterEffectForPlayer: {fileID: 1160371282}
-  strengthenPlayerEffect: {fileID: 1540096017}
-  strength: 2.5999999
-  speed: 0
-  tumble: 3
-  minSpawnInterval: 10
-  maxSpawnInterval: 20
-  cubesByEncounter: 0
-  isNegative: 0
-  hasEncounterEffect: 1
-  shm: {fileID: 0}
-  instance: {fileID: 0}
-  gaugeWhenDestroy: 0
-  loseEnergyWhenEncounter: 0
-  bounceDuration: 0
-  hasLevel: 1
-  nameForLevel: Metal
-  level: 0
-  player: {fileID: 0}
-  destroyBonusPerLevel:
-  - 0
-  - 1
-  - 2
-  bonus: 0
 --- !u!114 &1991538114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91380,8 +89676,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85bd37e8eaf3c4f02a3d2a0f1a640b6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 91418582}
-  copyRotation: 0
 --- !u!114 &1991538115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91393,38 +89687,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26fd6e67fcb1f475ba6471a1162a954d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceSpawnAtStart: 0
-  objAmount: 1
-  objPool: []
-  objDestroyEffectPool: []
-  objEncounterEffectPool: []
-  objPrefab: {fileID: 117384, guid: 50f32b0368e944945a1410e747cc30ce, type: 2}
-  objDestroyEffect: {fileID: 116864, guid: c37d1083178cd45a3ac690547aa860e0, type: 2}
-  objEncounterEffect: {fileID: 0}
-  objEncounterEffectForPlayer: {fileID: 0}
-  strengthenPlayerEffect: {fileID: 0}
-  strength: .600000024
-  speed: 75
-  tumble: 3
-  minSpawnInterval: 0
-  maxSpawnInterval: 100
-  cubesByEncounter: 10
-  isNegative: 0
-  hasEncounterEffect: 0
-  shm: {fileID: 0}
-  instance: {fileID: 0}
-  gaugeWhenDestroy: 0
-  loseEnergyWhenEncounter: 0
-  bounceDuration: 0
-  hasLevel: 0
-  nameForLevel: 
-  level: 0
-  player: {fileID: 0}
-  gcCount: {fileID: 966334536}
-  respawnAfter: 120
-  spawnRadius: 210
-  detectDistance: 100
-  generateCubePer: .300000012
 --- !u!114 &1991538116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91436,64 +89698,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4a6f13ade371487798c0f090d96ca5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceSpawnAtStart: 0
-  objAmount: 1
-  objPool: []
-  objDestroyEffectPool: []
-  objEncounterEffectPool: []
-  objPrefab: {fileID: 170554, guid: b66c990df6fbf411ca4af8720e5bb73b, type: 2}
-  objDestroyEffect: {fileID: 158326, guid: 7a4903aebeaf1440d95d69b1daac37af, type: 2}
-  objEncounterEffect: {fileID: 0}
-  objEncounterEffectForPlayer: {fileID: 317572741}
-  strengthenPlayerEffect: {fileID: 0}
-  strength: 0
-  speed: 0
-  tumble: 5
-  minSpawnInterval: 8
-  maxSpawnInterval: 12
-  cubesByEncounter: 5
-  isNegative: 0
-  hasEncounterEffect: 1
-  shm: {fileID: 0}
-  instance: {fileID: 0}
-  gaugeWhenDestroy: 0
-  loseEnergyWhenEncounter: 0
-  bounceDuration: 0
-  hasLevel: 1
-  nameForLevel: SummonParts
-  level: 0
-  player: {fileID: 0}
-  ptb: {fileID: 2048063065}
-  summonedPartPrefab: {fileID: 192090, guid: 16bbe96ae2882b4478d909a3bab22e21, type: 2}
-  summonedPartPool: []
-  summonedPartsDestroyEffect: {fileID: 158326, guid: 7a4903aebeaf1440d95d69b1daac37af,
-    type: 2}
-  summonedPartDestroyPool: []
-  summonPoolAmount: 20
-  numSpawnZPerLevel: 030000000400000005000000
-  summonedPartLifetimePerLevel:
-  - 3
-  - 3.5
-  - 4
-  startSpawnRadius: 50
-  numSpawnX: 3
-  distanceBtwX: 30
-  numSpawnZ: 3
-  distanceBtwZ: 30
-  summonedPartLifetime: 3
-  blinkBeforeDestroy: 1.20000005
-  showDurationStart: .349999994
-  showDurationDecrease: .100000001
-  emptyDurationStart: .150000006
-  emptyDurationDecrease: .0500000007
-  chanceBase: 200
-  goldenCubePrefab: {fileID: 117384, guid: 50f32b0368e944945a1410e747cc30ce, type: 2}
-  gcCount: {fileID: 966334536}
-  gcManager: {fileID: 1991538115}
-  goldCubesGet: 10
-  goldenCubeChance: 1
-  superheatPartPrefab: {fileID: 178724, guid: 10f2508b2281a4f35bc75f3e2629f9b7, type: 2}
-  superheatPartChance: 10
 --- !u!114 &1991538117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91505,38 +89709,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6886fc9ce01f45c6b2af6b90474ebd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceSpawnAtStart: 0
-  objAmount: 30
-  objPool: []
-  objDestroyEffectPool: []
-  objEncounterEffectPool: []
-  objPrefab: {fileID: 101786, guid: ba524a7769bc34372970ec9cf89920d8, type: 2}
-  objDestroyEffect: {fileID: 158326, guid: 7a4903aebeaf1440d95d69b1daac37af, type: 2}
-  objEncounterEffect: {fileID: 0}
-  objEncounterEffectForPlayer: {fileID: 317572741}
-  strengthenPlayerEffect: {fileID: 0}
-  strength: 0
-  speed: 0
-  tumble: 1
-  minSpawnInterval: 0
-  maxSpawnInterval: 0
-  cubesByEncounter: 5
-  isNegative: 0
-  hasEncounterEffect: 0
-  shm: {fileID: 0}
-  instance: {fileID: 0}
-  gaugeWhenDestroy: 0
-  loseEnergyWhenEncounter: 0
-  bounceDuration: 0
-  hasLevel: 0
-  nameForLevel: 
-  level: 0
-  player: {fileID: 0}
-  meshes: {fileID: 469330, guid: ce95c585031f840b0b5cffa6a71612d0, type: 2}
-  ptb: {fileID: 2048063065}
-  minUnstableSpeed: 10
-  maxUnstableSpeed: 20
-  partsPrefab: []
 --- !u!114 &1991538118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91548,55 +89720,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c23aea01899994ea4b539992af04eed8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceSpawnAtStart: 0
-  objAmount: 1
-  objPool: []
-  objDestroyEffectPool: []
-  objEncounterEffectPool: []
-  objPrefab: {fileID: 155682, guid: 5f189f3ef090540f6850da37ee3e59e1, type: 2}
-  objDestroyEffect: {fileID: 0}
-  objEncounterEffect: {fileID: 0}
-  objEncounterEffectForPlayer: {fileID: 0}
-  strengthenPlayerEffect: {fileID: 2086294867}
-  strength: 0
-  speed: 0
-  tumble: 5
-  minSpawnInterval: 8
-  maxSpawnInterval: 12
-  cubesByEncounter: 0
-  isNegative: 0
-  hasEncounterEffect: 1
-  shm: {fileID: 0}
-  instance: {fileID: 0}
-  gaugeWhenDestroy: 0
-  loseEnergyWhenEncounter: 0
-  bounceDuration: 0
-  hasLevel: 1
-  nameForLevel: EMP
-  level: 0
-  player: {fileID: 0}
-  gcCount: {fileID: 966334536}
-  guageAmount: 0
-  forceFieldRadiusPerLevel: 2c0100009001000026020000
-  cameraEnlargeSizePerLevel: 0f000000230000003c000000
-  cameraShakeAmountPerLevel:
-  - 5
-  - 10
-  - 20
-  targetRadius: 0
-  enlargeSize: 0
-  shakeAmount: 15
-  fieldRotateSpeed: 1500
-  enlargeDuration: .5
-  stayDuration: 1
-  shrinkDuration: .5
-  chanceBase: 200
-  goldenChance: 1
-  goldCubesGet: 1
-  superChance: 10
-  guageAmountSuper: 10
-  isGolden: 0
-  isSuper: 0
 --- !u!114 &1991538119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91608,43 +89731,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e30e54e795a1427d9385f359485404b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceSpawnAtStart: 0
-  objAmount: 1
-  objPool: []
-  objDestroyEffectPool: []
-  objEncounterEffectPool: []
-  objPrefab: {fileID: 175320, guid: 1362d0f6b94a74d3889e52e629b61cc5, type: 2}
-  objDestroyEffect: {fileID: 158326, guid: 7a4903aebeaf1440d95d69b1daac37af, type: 2}
-  objEncounterEffect: {fileID: 0}
-  objEncounterEffectForPlayer: {fileID: 1967867622}
-  strengthenPlayerEffect: {fileID: 1973202187}
-  strength: 0
-  speed: 0
-  tumble: 1
-  minSpawnInterval: 8
-  maxSpawnInterval: 12
-  cubesByEncounter: 0
-  isNegative: 0
-  hasEncounterEffect: 1
-  shm: {fileID: 0}
-  instance: {fileID: 0}
-  gaugeWhenDestroy: 0
-  loseEnergyWhenEncounter: 0
-  bounceDuration: 0
-  hasLevel: 1
-  nameForLevel: Transformer
-  level: 0
-  player: {fileID: 0}
-  subRatio: 20
-  mainRatio: 5
-  areaRadius: 160
-  laserShootDuration: .100000001
-  transformDuration: .200000003
-  transformLaser: {fileID: 187434, guid: f6e1add9fecea448c8755b2fd2af5cd5, type: 2}
-  laserPool: []
-  transformParticle: {fileID: 192076, guid: 71f31b91d7b964538adaaf9145237778, type: 2}
-  particlePool: []
-  laserAmount: 10
 --- !u!114 &1991538120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91656,54 +89742,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34421e72b6a7247aba1c42bcf08b0aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceSpawnAtStart: 0
-  objAmount: 1
-  objPool: []
-  objDestroyEffectPool: []
-  objEncounterEffectPool: []
-  objPrefab: {fileID: 150102, guid: 81e2d55c10afa40c2b9dc30f45edf1e4, type: 2}
-  objDestroyEffect: {fileID: 158326, guid: 7a4903aebeaf1440d95d69b1daac37af, type: 2}
-  objEncounterEffect: {fileID: 0}
-  objEncounterEffectForPlayer: {fileID: 0}
-  strengthenPlayerEffect: {fileID: 533108646}
-  strength: 0
-  speed: 0
-  tumble: 4
-  minSpawnInterval: 25
-  maxSpawnInterval: 35
-  cubesByEncounter: 0
-  isNegative: 0
-  hasEncounterEffect: 1
-  shm: {fileID: 0}
-  instance: {fileID: 0}
-  gaugeWhenDestroy: 0
-  loseEnergyWhenEncounter: 30
-  bounceDuration: 0
-  hasLevel: 1
-  nameForLevel: Dopple
-  level: 0
-  player: {fileID: 0}
-  blinkDistance: 100
-  getEnergy: {fileID: 317572741}
-  energyCube: {fileID: 178344, guid: b185d52f68bf5499e81f948bbbf1bd8c, type: 2}
-  forceFieldPrefab: {fileID: 175312, guid: c461f9df261eb41ff961769c46f81139, type: 2}
-  goodFieldPool: []
-  forceFieldByDopplePrefab: {fileID: 139776, guid: 5ebc0722331894005b24bbd0c1b32848,
-    type: 2}
-  badFieldPool: []
-  fieldAmount: 30
-  forceFieldSizePerLevel:
-  - .75
-  - 1
-  - 1.25
-  targetSize: 0
-  teleportSound: {fileID: 8300000, guid: 06f4fb62da1cc475ba87a41b6952dc8b, type: 3}
-  teleportSoundVolume: .5
-  cannotTeleportWarningSound: {fileID: 8300000, guid: 6175d64a3d350574aa82124734e3a684,
-    type: 3}
-  waveAwakeDuration: .0199999996
-  blinkInterval: 2
-  blinkRadius: 30
 --- !u!114 &1991538121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91715,45 +89753,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e247176bbdcf54f5193d2fd6eec22885, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceSpawnAtStart: 0
-  objAmount: 7
-  objPool: []
-  objDestroyEffectPool: []
-  objEncounterEffectPool: []
-  objPrefab: {fileID: 110936, guid: 4acea45691e994a5fa1609aa8f6d4059, type: 2}
-  objDestroyEffect: {fileID: 100394, guid: 6d663734c3fd54a6b9451df7119a0c2d, type: 2}
-  objEncounterEffect: {fileID: 100394, guid: 6d663734c3fd54a6b9451df7119a0c2d, type: 2}
-  objEncounterEffectForPlayer: {fileID: 0}
-  strengthenPlayerEffect: {fileID: 0}
-  strength: 2
-  speed: 35
-  tumble: 2
-  minSpawnInterval: 0
-  maxSpawnInterval: 0
-  cubesByEncounter: 10
-  isNegative: 1
-  hasEncounterEffect: 0
-  shm: {fileID: 0}
-  instance: {fileID: 0}
-  gaugeWhenDestroy: 10
-  loseEnergyWhenEncounter: 40
-  bounceDuration: .150000006
-  hasLevel: 0
-  nameForLevel: 
-  level: 0
-  player: {fileID: 0}
-  brokenTumble: 30
-  minBrokenSpawn: 6
-  maxBrokenSpawn: 8
-  minBrokenSize: .5
-  maxBrokenSize: 1
-  minBrokenSpeed: 200
-  maxBrokenSpeed: 400
-  minSizeAfterBreak: 5
-  maxSizeAfterBreak: 10
-  destroyLargeAfter: .5
-  destroySmallAfter: 4
-  brokenMeshes: {fileID: 476238, guid: 62e2117daecdc40d5a0b09caa67b04e1, type: 2}
 --- !u!114 &1991538122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91765,36 +89764,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9effc16f18494dd3a8bbf2074f1e4c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceSpawnAtStart: 0
-  objAmount: 1
-  objPool: []
-  objDestroyEffectPool: []
-  objEncounterEffectPool: []
-  objPrefab: {fileID: 199188, guid: fafc47b50cc6b4780800aa75f5cf8050, type: 2}
-  objDestroyEffect: {fileID: 131692, guid: d106bd98865d5490a91bf9e36681cafe, type: 2}
-  objEncounterEffect: {fileID: 131692, guid: d106bd98865d5490a91bf9e36681cafe, type: 2}
-  objEncounterEffectForPlayer: {fileID: 0}
-  strengthenPlayerEffect: {fileID: 1248557235}
-  strength: .899999976
-  speed: 150
-  tumble: 10
-  minSpawnInterval: 1
-  maxSpawnInterval: 4
-  cubesByEncounter: 0
-  isNegative: 1
-  hasEncounterEffect: 0
-  shm: {fileID: 0}
-  instance: {fileID: 0}
-  gaugeWhenDestroy: 0
-  loseEnergyWhenEncounter: 10
-  bounceDuration: 0
-  hasLevel: 0
-  nameForLevel: 
-  level: 0
-  player: {fileID: 0}
-  spawnRadius: 200
-  playerSpeedReduceTo: .200000003
-  speedRestoreDuring: 3
 --- !u!114 &1991538123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91806,48 +89775,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23060cb83cef444bd89638f1ec187567, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceSpawnAtStart: 0
-  objAmount: 5
-  objPool: []
-  objDestroyEffectPool: []
-  objEncounterEffectPool: []
-  objPrefab: {fileID: 108358, guid: ed3edd2867d2d42c99d6c99c3f96987e, type: 2}
-  objDestroyEffect: {fileID: 139520, guid: b60b7b3d957cf4c13bf86d902b4fb80f, type: 2}
-  objEncounterEffect: {fileID: 139520, guid: b60b7b3d957cf4c13bf86d902b4fb80f, type: 2}
-  objEncounterEffectForPlayer: {fileID: 0}
-  strengthenPlayerEffect: {fileID: 0}
-  strength: -1
-  speed: 0
-  tumble: 10
-  minSpawnInterval: 8
-  maxSpawnInterval: 12
-  cubesByEncounter: 0
-  isNegative: 1
-  hasEncounterEffect: 0
-  shm: {fileID: 0}
-  instance: {fileID: 0}
-  gaugeWhenDestroy: 0
-  loseEnergyWhenEncounter: 30
-  bounceDuration: .300000012
-  hasLevel: 0
-  nameForLevel: 
-  level: 0
-  player: {fileID: 0}
-  particleDestroyByPlayer: {fileID: 190966, guid: 06a9d910a6ef7477eb37b2d7cddcfa88,
-    type: 2}
-  particleDestroyByPlayerPool: []
-  minScale: 15
-  maxScale: 25
-  startDuration: .800000012
-  decreaseDurationPerPulse: .100000001
-  empScale: 70
-  empRotatingSpeed: 500
-  enlargeDuration: .100000001
-  stayDuration: 1
-  shrinkDuration: .100000001
-  enlargeScale: 2
-  loseEnergyBigger: 50
-  bounceDuringBigger: .5
 --- !u!114 &1991538124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91859,52 +89786,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 444896ada696347dc97655283cc94b1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceSpawnAtStart: 0
-  objAmount: 5
-  objPool: []
-  objDestroyEffectPool: []
-  objEncounterEffectPool: []
-  objPrefab: {fileID: 175286, guid: c686fe84f109345a68ca524483736f13, type: 2}
-  objDestroyEffect: {fileID: 0}
-  objEncounterEffect: {fileID: 0}
-  objEncounterEffectForPlayer: {fileID: 0}
-  strengthenPlayerEffect: {fileID: 0}
-  strength: 10
-  speed: 80
-  tumble: 50
-  minSpawnInterval: 5
-  maxSpawnInterval: 5
-  cubesByEncounter: 50
-  isNegative: 1
-  hasEncounterEffect: 0
-  shm: {fileID: 0}
-  instance: {fileID: 0}
-  gaugeWhenDestroy: 0
-  loseEnergyWhenEncounter: 30
-  bounceDuration: .150000006
-  hasLevel: 0
-  nameForLevel: 
-  level: 0
-  player: {fileID: 0}
-  laserPrefab: {fileID: 140848, guid: ee9b8d5623d8a4cb2a1aed0140e7d797, type: 2}
-  laserWarningLinePrefab: {fileID: 149728, guid: 1a32e5133a7bd4c099bbab27e21edf87,
-    type: 2}
-  laserPool: []
-  laserWarningPool: []
-  laserPoolAmount: 30
-  spawnRadius: 200
-  headFollowingSpeed: 100
-  speedIncreaseAmount: 5
-  speedIncreasePer: 3
-  shootLaserPer: 8
-  chargeTime: .600000024
-  laserLoseEnergy: 70
-  laserRadius: 20
-  laserLength: 500
-  laserShootingDuration: .100000001
-  laserStayDuration: .5
-  laserShrinkingDuration: .100000001
-  laserRotatingSpeed: 1000
 --- !u!114 &1991538125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91916,34 +89797,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04e0f99a33ef140f9a446b512cd54bc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceSpawnAtStart: 0
-  objAmount: 1
-  objPool: []
-  objDestroyEffectPool: []
-  objEncounterEffectPool: []
-  objPrefab: {fileID: 178724, guid: 10f2508b2281a4f35bc75f3e2629f9b7, type: 2}
-  objDestroyEffect: {fileID: 158326, guid: 7a4903aebeaf1440d95d69b1daac37af, type: 2}
-  objEncounterEffect: {fileID: 154526, guid: b04bed1b0acbd492f962c0467fc30f90, type: 2}
-  objEncounterEffectForPlayer: {fileID: 0}
-  strengthenPlayerEffect: {fileID: 0}
-  strength: 0
-  speed: 0
-  tumble: 10
-  minSpawnInterval: 8
-  maxSpawnInterval: 12
-  cubesByEncounter: 0
-  isNegative: 0
-  hasEncounterEffect: 0
-  shm: {fileID: 0}
-  instance: {fileID: 0}
-  gaugeWhenDestroy: 0
-  loseEnergyWhenEncounter: 0
-  bounceDuration: 0
-  hasLevel: 0
-  nameForLevel: 
-  level: 0
-  player: {fileID: 0}
-  guageForEncounter: 100
 --- !u!114 &1991538126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91955,39 +89808,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 242b450f752a147ba8c7080b38d403c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceSpawnAtStart: 0
-  objAmount: 1
-  objPool: []
-  objDestroyEffectPool: []
-  objEncounterEffectPool: []
-  objPrefab: {fileID: 180950, guid: 0f9c962fa323d4d87ad6451daafdcc00, type: 2}
-  objDestroyEffect: {fileID: 139784, guid: 8214acc41bcca411eb523a83f2ef812a, type: 2}
-  objEncounterEffect: {fileID: 0}
-  objEncounterEffectForPlayer: {fileID: 1552135347}
-  strengthenPlayerEffect: {fileID: 851953042}
-  strength: .5
-  speed: 0
-  tumble: 10
-  minSpawnInterval: 20
-  maxSpawnInterval: 40
-  cubesByEncounter: 0
-  isNegative: 0
-  hasEncounterEffect: 1
-  shm: {fileID: 0}
-  instance: {fileID: 0}
-  gaugeWhenDestroy: 0
-  loseEnergyWhenEncounter: 0
-  bounceDuration: 0
-  hasLevel: 1
-  nameForLevel: Magnet
-  level: 0
-  player: {fileID: 0}
-  power: 70
-  radiusPerLevel: 5a00000082000000b4000000
-  lifetimePerLevel:
-  - .675000012
-  - .975000024
-  - 1.38
 --- !u!114 &1991538127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91999,40 +89819,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54798c5e1936d479db5433d801801368, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceSpawnAtStart: 0
-  objAmount: 1
-  objPool: []
-  objDestroyEffectPool: []
-  objEncounterEffectPool: []
-  objPrefab: {fileID: 122466, guid: 450360a9394bf427c8c05179e00cc990, type: 2}
-  objDestroyEffect: {fileID: 151454, guid: 3309d8ab8d8034123b192ddb797f92aa, type: 2}
-  objEncounterEffect: {fileID: 151454, guid: 3309d8ab8d8034123b192ddb797f92aa, type: 2}
-  objEncounterEffectForPlayer: {fileID: 0}
-  strengthenPlayerEffect: {fileID: 0}
-  strength: 3
-  speed: 80
-  tumble: 10
-  minSpawnInterval: 8
-  maxSpawnInterval: 8
-  cubesByEncounter: 30
-  isNegative: 1
-  hasEncounterEffect: 0
-  shm: {fileID: 0}
-  instance: {fileID: 0}
-  gaugeWhenDestroy: 0
-  loseEnergyWhenEncounter: 30
-  bounceDuration: .150000006
-  hasLevel: 0
-  nameForLevel: 
-  level: 0
-  player: {fileID: 0}
-  slowStayDuration: 1
-  increaseSpeedDuration: 2
-  increaseSpeedUntil: 180
-  detectDistance: 200
-  spawnRadius: 200
-  offScreenSpeedScale: .800000012
-  spawnCount: 0
 --- !u!114 &1991538128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92044,35 +89830,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fab49da668d54f9b9cd0790611de454, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceSpawnAtStart: 0
-  objAmount: 1
-  objPool: []
-  objDestroyEffectPool: []
-  objEncounterEffectPool: []
-  objPrefab: {fileID: 171932, guid: 2232be8d759d74dde980a29842a449bf, type: 2}
-  objDestroyEffect: {fileID: 0}
-  objEncounterEffect: {fileID: 0}
-  objEncounterEffectForPlayer: {fileID: 0}
-  strengthenPlayerEffect: {fileID: 0}
-  strength: 0
-  speed: 0
-  tumble: 10
-  minSpawnInterval: 0
-  maxSpawnInterval: 0
-  cubesByEncounter: 0
-  isNegative: 1
-  hasEncounterEffect: 0
-  shm: {fileID: 0}
-  instance: {fileID: 0}
-  gaugeWhenDestroy: 0
-  loseEnergyWhenEncounter: 100
-  bounceDuration: 0
-  hasLevel: 0
-  nameForLevel: 
-  level: 0
-  player: {fileID: 0}
-  spawnRadius: 250
-  speedScale: 1.10000002
 --- !u!1 &1997391145
 GameObject:
   m_ObjectHideFlags: 0
@@ -92180,23 +89937,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4d832278b190421e8a2402bc55159cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 0}
-  inactiveMesh: {fileID: 0}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 1
-  blinkOnStart: 0
-  maxLevel: 3
-  isCollector: 0
-  isGoldOnly: 0
-  isCubeOnly: 0
-  objectName: "\uD658\uC601 \uC0DD\uC131\uAE30"
-  description: "\uC791\uB3D9\uC2DC\uD0AC \uB54C\uB9C8\uB2E4 \uB2E4\uC74C \uD658\uC601\uC744
-    \uB9CC\uB4E4\uC5B4\uB0C5\uB2C8\uB2E4."
-  upgradeEffect: "\uD658\uC601 \uC0DD\uC131 \uC218 \uC99D\uAC00"
-  cubePrice: 500
-  goldenCubePrice: 5
-  prices: f4010000dc050000b80b0000
 --- !u!65 &2002636512
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -92812,17 +90552,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0442c1db618b4a01829a96b1ac29461, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boundary: {fileID: 713807492}
-  rotatingSpeed: -20
-  normalParts: {fileID: 469330, guid: ce95c585031f840b0b5cffa6a71612d0, type: 2}
-  inactiveMat: {fileID: 2100000, guid: 04933afbff53a46038b1813cf3d00eaf, type: 2}
-  activeMat: {fileID: 2100000, guid: e55d1f0500d8b4a968f207307450069f, type: 2}
-  numPartsToCollect: 5
-  guagePerCollect: 200
-  pitchIncreasePerCollect: .0500000007
-  indicatorRotatingSpeed: -20
-  collectSound: {fileID: 463180077}
-  collectCompleteSound: {fileID: 1774752850}
 --- !u!1 &2048411582
 GameObject:
   m_ObjectHideFlags: 0
@@ -92948,13 +90677,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 686212e7a972945beb15d31c59a10dff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 0}
-  inactiveMesh: {fileID: 0}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 0
-  blinkOnStart: 0
-  linkTo: http://google.com
 --- !u!1 &2073951468
 GameObject:
   m_ObjectHideFlags: 0
@@ -94311,9 +92033,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af0e08c3844d8484cb160fba782920b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeTo: 
-  effectName: 
-  targetScale: 0
 --- !u!135 &2086294872
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -94371,8 +92090,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85bd37e8eaf3c4f02a3d2a0f1a640b6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 91418582}
-  copyRotation: 0
 --- !u!114 &2086294876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94384,8 +92101,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f06123745de447ea8d1f6ecab54bbea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  empManager: {fileID: 1991538118}
-  gcCount: {fileID: 966334536}
 --- !u!1 &2098232689
 GameObject:
   m_ObjectHideFlags: 0
@@ -94463,11 +92178,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 518619572cf874c74a8f7c73fd8c80bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: "\uC885\uC774\uBE44\uD589\uAE30"
-  price: 100
-  rarity: Common
-  description: 
-  description2: 
 --- !u!23 &2104714906
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -94568,12 +92278,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04d1e4ff83e344c2ab093563cdcc4568, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 0}
-  inactiveMesh: {fileID: 0}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 1
-  blinkOnStart: 0
 --- !u!23 &2111377104
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -94665,12 +92369,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04d1e4ff83e344c2ab093563cdcc4568, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMesh: {fileID: 0}
-  inactiveMesh: {fileID: 0}
-  blinkingMesh: {fileID: 0}
-  blinkingSeconds: .400000006
-  playTouchSound: 1
-  blinkOnStart: 0
 --- !u!23 &2117742422
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -96072,9 +93770,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fcbea737974c456092156b8cd6f4218, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectDistance: .699999988
-  widthOffset: 30
-  heightOffset: 50
 --- !u!1 &2134279968
 GameObject:
   m_ObjectHideFlags: 0

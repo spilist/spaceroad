@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour {
   public static Player pl;
+  public ForceMode forceMode;
   public Transform characters;
   public string character;
   public PlayerAngle playerAngle;
@@ -33,9 +34,11 @@ public class Player : MonoBehaviour {
 
     Transform cha = characters.Find(character);
     GetComponent<MeshFilter>().sharedMesh = cha.GetComponent<MeshFilter>().sharedMesh;
-    GameObject particles = cha.Find("Particles").gameObject;
-    particles.transform.SetParent(transform, false);
-    particles.SetActive(true);
+    foreach (Transform tr in cha) {
+      tr.SetParent(transform, false);
+      tr.gameObject.SetActive(true);
+    }
+    GetComponent<BoxCollider>().size = cha.GetComponent<BoxCollider>().size;
   }
 
   void Start () {
@@ -50,7 +53,10 @@ public class Player : MonoBehaviour {
   void FixedUpdate () {
     speed = caculateSpeed();
     rb.velocity = direction * speed;
-    speedText.text = "SPEED: " + speed.ToString("0");
+    // if (rb.velocity.magnitude < maxSpeed) {
+      // rb.AddForce(direction * acceleration, forceMode);
+    // }
+    speedText.text = "SPEED: " + rb.velocity.magnitude.ToString("0");
   }
 
   float caculateSpeed() {
@@ -61,6 +67,13 @@ public class Player : MonoBehaviour {
     } else {
       return Mathf.MoveTowards(speed, maxSpeed, Time.fixedDeltaTime * acceleration);
     }
+  }
+
+  public void processCollision(ObjectMover mover, Collision collision) {
+    Vector3 relVelocity = collision.relativeVelocity;
+    float objMass = mover.GetComponent<Rigidbody>().mass;
+    Vector3 collisionForce = relVelocity * objMass;
+    rb.AddForceAtPosition(collisionForce, collision.contacts[0].point, forceMode);
   }
 
   public float getSpeed() {
@@ -84,6 +97,7 @@ public class Player : MonoBehaviour {
     playerAngle.tilt(sign);
     setDirection((direction + perp).normalized);
   }
+
 
   // void OnTriggerEnter(Collider other) {
   //   string tag = other.tag;
