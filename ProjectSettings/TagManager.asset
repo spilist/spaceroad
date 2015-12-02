@@ -5,6 +5,24 @@ TagManager:
   serializedVersion: 2
   tags:
   - MoveArea
+  - ContactCollider
+  - PauseButton
+  - Boundary
+  - Ground
+  - Obstacle_big
+  - MiniMonster
+  - Obstacle_small
+  - Obstacle
+  - Part
+  - GoldenCube
+  - Alienship
+  - IceDebris
+  - Monster
+  - PhaseMonster
+  - TimeMonster
+  - SpaceShipDebris
+  - PlayerLaser
+  - Quest
   layers:
   - Default
   - TransparentFX
@@ -14,8 +32,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - FieldObjects
+  - Player
   - 
   - 
   - 

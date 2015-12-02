@@ -16,6 +16,7 @@ public class Player : MonoBehaviour {
   public float acceleration = 40;
   public float deceleration = 20;
   public float curveSensitivity = 2;
+  public float turnSpeed = 180;
   private float speedScale;
   private string moreSpeedCondition;
 
@@ -26,6 +27,9 @@ public class Player : MonoBehaviour {
   private bool gameStarted;
   private bool decelerating;
 
+  private float m_MovementInputValue;         // The current value of the movement input.
+  private float m_TurnInputValue;             // The current value of the turn input.
+
   // public PlayerDirectionIndicator dirIndicator;
 
   void Awake() {
@@ -34,29 +38,94 @@ public class Player : MonoBehaviour {
 
     Transform cha = characters.Find(character);
     GetComponent<MeshFilter>().sharedMesh = cha.GetComponent<MeshFilter>().sharedMesh;
-    foreach (Transform tr in cha) {
-      tr.SetParent(transform, false);
-      tr.gameObject.SetActive(true);
-    }
+    cha.GetChild(0).gameObject.SetActive(true);
+    cha.GetChild(0).SetParent(transform, false);
     GetComponent<BoxCollider>().size = cha.GetComponent<BoxCollider>().size;
   }
 
   void Start () {
-    Vector2 randomV = Random.insideUnitCircle;
-    randomV.Normalize();
-    direction = new Vector3(randomV.x, 0, randomV.y);
-    setDirection(direction);
+    // Vector2 randomV = Random.insideUnitCircle;
+    // randomV.Normalize();
+    // direction = new Vector3(randomV.x, 0, randomV.y);
+    // setDirection(direction);
 
     rb = GetComponent<Rigidbody>();
+    SpawnManager.sm.run();
   }
 
   void FixedUpdate () {
-    speed = caculateSpeed();
-    rb.velocity = direction * speed;
+    // speed = caculateSpeed();
+    // rb.velocity = direction * speed;
+
     // if (rb.velocity.magnitude < maxSpeed) {
-      // rb.AddForce(direction * acceleration, forceMode);
+    //   rb.AddForce(direction * acceleration, forceMode);
     // }
+
+    // rb.AddRelativeForce(0f, 0f, powerInput * 90);
+    // rb.AddRelativeTorque(0f, turnInput * 5, 0f);
+
+    Move();
+    Turn();
+
     speedText.text = "SPEED: " + rb.velocity.magnitude.ToString("0");
+  }
+
+  void Move () {
+      // Create a vector in the direction the tank is facing with a magnitude based on the input, speed and the time between frames.
+      speed = caculateSpeed();
+      Vector3 movement = transform.forward * speed * Time.deltaTime;
+
+      // Apply this movement to the rigidbody's position.
+      // rb.MovePosition(rb.position + movement);
+      rb.velocity = rb.velocity + movement;
+  }
+
+  void Turn () {
+      // Determine the number of degrees to be turned based on the input, speed and time between frames.
+      float turn = m_TurnInputValue * turnSpeed * Time.deltaTime;
+
+      // Make this into a rotation in the y axis.
+      Quaternion turnRotation = Quaternion.Euler (0f, turn, 0f);
+
+      // Apply this rotation to the rigidbody's rotation.
+      rb.MoveRotation (rb.rotation * turnRotation);
+
+      // Debug.Log(rb.rotation);
+      // if (tilting) {
+      //   currentTilt = Mathf.MoveTowards(currentTilt, tiltAmount, Time.deltaTime * maxTiltAmount / tiltDuration);
+      //   transform.localEulerAngles = new Vector3(0, currentAngle, 0 + currentTilt);
+
+      //   if (currentTilt == tiltAmount) {
+      //     tilting = false;
+      //   }
+      // }
+
+      // if (tiltingBack) {
+      //   currentTilt = Mathf.MoveTowards(currentTilt, 0, Time.deltaTime * maxTiltAmount / tiltBackDuration);
+      //   transform.localEulerAngles = new Vector3(0, currentAngle, 0 + currentTilt);
+
+      //   if (currentTilt == 0) {
+      //     tiltingBack = false;
+      //   }
+      // }
+  }
+
+  public void tiltBack() {
+    decelerating = false;
+    playerAngle.tiltBack();
+    m_TurnInputValue = 0;
+  }
+
+  public void setPerpDirection(string dir) {
+    decelerating = true;
+    int sign = (dir == "Left") ? -1 : 1;
+    m_TurnInputValue = sign;
+    rb.angularVelocity = Vector3.zero;
+    // Vector3 perp = new Vector3(-direction.z, 0, direction.x) * sign * Time.fixedDeltaTime * curveSensitivity;
+    // playerAngle.tilt(sign);
+    // playerAngle.setDirection(dir);
+
+    // setDirection((direction + perp).normalized);
   }
 
   float caculateSpeed() {
@@ -70,10 +139,24 @@ public class Player : MonoBehaviour {
   }
 
   public void processCollision(ObjectMover mover, Collision collision) {
+    speed = Mathf.Max(0, speed - 100);
     Vector3 relVelocity = collision.relativeVelocity;
+    // Debug.Log(relVelocity);
     float objMass = mover.GetComponent<Rigidbody>().mass;
     Vector3 collisionForce = relVelocity * objMass;
-    rb.AddForceAtPosition(collisionForce, collision.contacts[0].point, forceMode);
+
+    // Vector3 normal = collision.contacts[0].normal;
+    // Vector3 dir = Vector3.Reflect(direction, -normal).normalized;
+    // dir.y = 0;
+    // dir.Normalize();
+
+    // speed -= 200;
+    // if (speed < 0) {
+      // direction = dir;
+      // speed = -speed;
+    // }
+    // setDirection(dir);
+    // rb.AddForceAtPosition(collisionForce, collision.contacts[0].point, ForceMode.Impulse);
   }
 
   public float getSpeed() {
@@ -83,21 +166,6 @@ public class Player : MonoBehaviour {
   public void gameStart() {
     gameStarted = true;
   }
-
-  public void tiltBack() {
-    decelerating = false;
-    playerAngle.tiltBack();
-  }
-
-  public void setPerpDirection(string dir) {
-    decelerating = true;
-    int sign = (dir == "Left") ? 1 : -1;
-
-    Vector3 perp = new Vector3(-direction.z, 0, direction.x) * sign * Time.fixedDeltaTime * curveSensitivity;
-    playerAngle.tilt(sign);
-    setDirection((direction + perp).normalized);
-  }
-
 
   // void OnTriggerEnter(Collider other) {
   //   string tag = other.tag;

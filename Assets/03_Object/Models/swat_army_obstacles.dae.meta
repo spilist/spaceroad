@@ -1,27 +1,32 @@
 fileFormatVersion: 2
-guid: 1ec63231651dc4ff2acbee3e5c87aef1
-timeCreated: 1448613385
+guid: fd5d8259aa9e7470394095900a1dff82
+timeCreated: 1448601408
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
-    100000: police_drone
-    100002: police_ship
+    100000: army_jet_fighter
+    100002: army_laser_ship
     100004: //RootNode
-    100006: swat_ship
-    400000: police_drone
-    400002: police_ship
+    100006: swat_barricade
+    100008: swat_bomb_drone
+    400000: army_jet_fighter
+    400002: army_laser_ship
     400004: //RootNode
-    400006: swat_ship
-    2300000: police_drone
-    2300002: police_ship
-    2300004: swat_ship
-    3300000: police_drone
-    3300002: police_ship
-    3300004: swat_ship
-    4300000: police_ship
-    4300002: police_drone
-    4300004: swat_ship
+    400006: swat_barricade
+    400008: swat_bomb_drone
+    2300000: army_jet_fighter
+    2300002: army_laser_ship
+    2300004: swat_barricade
+    2300006: swat_bomb_drone
+    3300000: army_jet_fighter
+    3300002: army_laser_ship
+    3300004: swat_barricade
+    3300006: swat_bomb_drone
+    4300000: swat_bomb_drone
+    4300002: swat_barricade
+    4300004: army_jet_fighter
+    4300006: army_laser_ship
     9500000: //RootNode
   materials:
     importMaterials: 1

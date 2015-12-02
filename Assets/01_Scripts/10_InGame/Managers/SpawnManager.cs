@@ -4,8 +4,8 @@ using System.Linq;
 
 public class SpawnManager : MonoBehaviour {
   public static SpawnManager sm;
-  public float generateSpaceRadius = 0.9f;
-  public float generateOffset = 0.2f;
+  public int minSpawnRadius = 200;
+  public int maxSpawnRadius = 400;
 
   void Awake() {
     sm = this;
@@ -38,22 +38,20 @@ public class SpawnManager : MonoBehaviour {
   // }
 
   public Vector3 getSpawnPosition(GameObject target) {
-    float screenX, screenY;
+    float posX, posY;
     Vector3 spawnPosition;
     int count = 0;
 
     LayerMask mask = (int) Mathf.Pow(2, target.gameObject.layer);
     float radius = target.GetComponent<ObjectMover>().boundingSize;
 
-    float offset_ = generateOffset;
+    Vector2 screenPos = Random.insideUnitCircle;
+    screenPos.Normalize();
 
     do {
-      do {
-        screenX = Random.Range(-generateSpaceRadius, 1 + generateSpaceRadius);
-        screenY = Random.Range(-generateSpaceRadius, 1 + generateSpaceRadius);
-      } while(-offset_ < screenX && screenX < offset_ + 1 && -offset_ < screenY && screenY < offset_ + 1);
-
-      spawnPosition = Camera.main.ViewportToWorldPoint(new Vector3(screenX, screenY, Camera.main.transform.position.y));
+      posX = Random.Range(minSpawnRadius, maxSpawnRadius);
+      posY = Random.Range(minSpawnRadius, maxSpawnRadius);
+      spawnPosition = new Vector3(screenPos.x * posX + Player.pl.transform.position.x, Player.pl.transform.position.y, screenPos.y * posY + Player.pl.transform.position.z);
     } while(Physics.OverlapSphere(spawnPosition, radius, mask).Length > 0 && count++ < 100);
 
     if (count >= 100) Debug.Log(target.name + " is overlapped");

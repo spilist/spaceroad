@@ -102,6 +102,7 @@ public class InputHandler : MonoBehaviour
     gameStarted = true;
     hideAfterStart.SetActive(false);
     inGameUI.SetActive(true);
+    SpawnManager.sm.run();
   }
 
   // void OnMouseDown() {

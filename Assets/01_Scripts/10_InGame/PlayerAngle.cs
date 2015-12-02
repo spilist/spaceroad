@@ -23,12 +23,12 @@ public class PlayerAngle : MonoBehaviour {
   }
 
   void Update () {
-    if (dirChanging) {
-      currentAngle = Mathf.MoveTowards(currentAngle, targetAngle, Time.deltaTime * followingSpeed);
+    // if (dirChanging) {
+    //   currentAngle = Mathf.MoveTowards(currentAngle, targetAngle, Time.deltaTime * followingSpeed);
 
-      transform.localEulerAngles = new Vector3(0, currentAngle, 0 + currentTilt);
-      if (Mathf.Abs(currentAngle - targetAngle) < 1f) dirChanging = false;
-    }
+    //   transform.localEulerAngles = new Vector3(0, currentAngle, 0 + currentTilt);
+    //   if (Mathf.Abs(currentAngle - targetAngle) < 1f) dirChanging = false;
+    // }
 
     if (tilting) {
       currentTilt = Mathf.MoveTowards(currentTilt, tiltAmount, Time.deltaTime * maxTiltAmount / tiltDuration);
