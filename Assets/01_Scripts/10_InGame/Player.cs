@@ -40,7 +40,7 @@ public class Player : MonoBehaviour {
     GetComponent<MeshFilter>().sharedMesh = cha.GetComponent<MeshFilter>().sharedMesh;
     cha.GetChild(0).gameObject.SetActive(true);
     cha.GetChild(0).SetParent(transform, false);
-    GetComponent<BoxCollider>().size = cha.GetComponent<BoxCollider>().size;
+    //GetComponent<BoxCollider>().size = cha.GetComponent<BoxCollider>().size;
   }
 
   void Start () {
@@ -72,23 +72,46 @@ public class Player : MonoBehaviour {
 
   void Move () {
       // Create a vector in the direction the tank is facing with a magnitude based on the input, speed and the time between frames.
-      speed = caculateSpeed();
-      Vector3 movement = transform.forward * speed * Time.deltaTime;
+      //Vector3 movement = transform.forward * speed * Time.deltaTime;
 
-      // Apply this movement to the rigidbody's position.
-      // rb.MovePosition(rb.position + movement);
-      rb.velocity = rb.velocity + movement;
+		if (rb.velocity.magnitude < maxSpeed) {
+
+			if (decelerating) {
+				rb.velocity = rb.velocity - transform.forward * Time.fixedDeltaTime * deceleration;
+				Debug.Log ("decel");
+
+			} else {
+				rb.velocity = rb.velocity + transform.forward * Time.fixedDeltaTime * acceleration;
+				Debug.Log ("accel");
+			}
+
+		}
+
   }
 
   void Turn () {
+
+		if (m_TurnInputValue != 0) {
+			decelerating = true;
+			Quaternion deltaAngle =
+			Quaternion.AngleAxis (Mathf.Rad2Deg * m_TurnInputValue * turnSpeed * Time.deltaTime, transform.up);
+			transform.Rotate (deltaAngle.eulerAngles);
+		
+			Vector3 v = rb.velocity;
+			v = deltaAngle * v;
+			rb.velocity = v;
+		} else {
+			decelerating = false;
+		}
+
       // Determine the number of degrees to be turned based on the input, speed and time between frames.
-      float turn = m_TurnInputValue * turnSpeed * Time.deltaTime;
+      //float turn = m_TurnInputValue * turnSpeed * Time.deltaTime;
 
       // Make this into a rotation in the y axis.
-      Quaternion turnRotation = Quaternion.Euler (0f, turn, 0f);
+      //Quaternion turnRotation = Quaternion.Euler (0f, turn, 0f);
 
       // Apply this rotation to the rigidbody's rotation.
-      rb.MoveRotation (rb.rotation * turnRotation);
+      //rb.MoveRotation (rb.rotation * turnRotation);
 
       // Debug.Log(rb.rotation);
       // if (tilting) {
