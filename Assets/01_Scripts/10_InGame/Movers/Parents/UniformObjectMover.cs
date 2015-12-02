@@ -10,14 +10,14 @@ public class UniformObjectMover : ObjectMover {
   override protected void Awake() {
     base.Awake();
     manager = (UniformObjectsManager) _manager.GetComponent(getManager());
+    speed = getSpeed();
+    tumble = getTumble();
   }
 
   override protected void OnEnable() {
     base.OnEnable();
-    speed = getSpeed();
-    tumble = getTumble();
-    direction = getDirection();
 
+    direction = getDirection();
     rb.angularVelocity = Random.onUnitSphere * tumble;
     rb.velocity = direction * speed;
   }

@@ -1,15 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class LRObjectsManager : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+public class LRObjectsManager : ObjectsManager {
+  public float acceleration;
+  public float deceleration;
+  public float baseSpeed;
+  public float maxSpeed;
+  public float turnSpeed;
 }

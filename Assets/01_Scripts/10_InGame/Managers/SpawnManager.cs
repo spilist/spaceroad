@@ -13,6 +13,7 @@ public class SpawnManager : MonoBehaviour {
 
   public void run() {
     GetComponent<AsteroidManager>().enabled = true;
+    GetComponent<PoliceShipManager>().enabled = true;
 
     // GetComponent<NormalPartsManager>().enabled = true;
 

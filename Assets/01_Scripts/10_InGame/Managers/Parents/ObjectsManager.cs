@@ -22,10 +22,10 @@ public class ObjectsManager : MonoBehaviour {
 
   public GameObject instance;
 
-  virtual protected void beforeInit() {}
+  virtual protected void BeforeInit() {}
 
   void OnEnable() {
-    beforeInit();
+    BeforeInit();
 
     objPool = new List<GameObject>();
     for (int i = 0; i < objAmount; ++i) {
@@ -82,7 +82,9 @@ public class ObjectsManager : MonoBehaviour {
     return obj;
   }
 
-  virtual public void initRest() {}
+  virtual protected void initRest() {
+    spawnPooledObjs(objPool, objPrefab, objAmount);
+  }
 
   virtual public void run(bool val) {
     skipInterval = val;

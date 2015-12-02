@@ -15,7 +15,7 @@ public class Player : MonoBehaviour {
   public float maxSpeed = 200;
   public float acceleration = 40;
   public float deceleration = 20;
-  public float curveSensitivity = 2;
+  // public float curveSensitivity = 2;
   public float turnSpeed = 180;
   private float speedScale;
   private string moreSpeedCondition;
@@ -40,7 +40,7 @@ public class Player : MonoBehaviour {
     GetComponent<MeshFilter>().sharedMesh = cha.GetComponent<MeshFilter>().sharedMesh;
     cha.GetChild(0).gameObject.SetActive(true);
     cha.GetChild(0).SetParent(transform, false);
-    //GetComponent<BoxCollider>().size = cha.GetComponent<BoxCollider>().size;
+    GetComponent<BoxCollider>().size = cha.GetComponent<BoxCollider>().size;
   }
 
   void Start () {
@@ -71,32 +71,24 @@ public class Player : MonoBehaviour {
   }
 
   void Move () {
-      // Create a vector in the direction the tank is facing with a magnitude based on the input, speed and the time between frames.
-      //Vector3 movement = transform.forward * speed * Time.deltaTime;
-
 		if (rb.velocity.magnitude < maxSpeed) {
-
 			if (decelerating) {
-				rb.velocity = rb.velocity - transform.forward * Time.fixedDeltaTime * deceleration;
-				Debug.Log ("decel");
-
+        if (rb.velocity.magnitude > Time.fixedDeltaTime * deceleration)
+          rb.velocity = rb.velocity - transform.forward * Time.fixedDeltaTime * deceleration;
 			} else {
+        // rb.velocity = transform.forward * (rb.velocity.magnitude + Time.fixedDeltaTime * acceleration);
 				rb.velocity = rb.velocity + transform.forward * Time.fixedDeltaTime * acceleration;
-				Debug.Log ("accel");
 			}
-
 		}
-
   }
 
   void Turn () {
-
 		if (m_TurnInputValue != 0) {
 			decelerating = true;
 			Quaternion deltaAngle =
-			Quaternion.AngleAxis (Mathf.Rad2Deg * m_TurnInputValue * turnSpeed * Time.deltaTime, transform.up);
+			Quaternion.AngleAxis (Mathf.Rad2Deg * m_TurnInputValue * turnSpeed * Time.fixedDeltaTime, transform.up);
 			transform.Rotate (deltaAngle.eulerAngles);
-		
+
 			Vector3 v = rb.velocity;
 			v = deltaAngle * v;
 			rb.velocity = v;
@@ -143,7 +135,7 @@ public class Player : MonoBehaviour {
     decelerating = true;
     int sign = (dir == "Left") ? -1 : 1;
     m_TurnInputValue = sign;
-    rb.angularVelocity = Vector3.zero;
+    // rb.angularVelocity = Vector3.zero;
     // Vector3 perp = new Vector3(-direction.z, 0, direction.x) * sign * Time.fixedDeltaTime * curveSensitivity;
     // playerAngle.tilt(sign);
     // playerAngle.setDirection(dir);
