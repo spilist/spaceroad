@@ -97,13 +97,17 @@ public class InputHandler : MonoBehaviour
   }
 
   void startGame() {
+    if (GameManager.gm.IsOver()) {
+      Application.LoadLevelAsync(Application.loadedLevel);
+    }
+
     if (gameStarted) return;
     Player.pl.gameStart();
     gameStarted = true;
     hideAfterStart.SetActive(false);
     inGameUI.SetActive(true);
     SpawnManager.sm.run();
-    TimeManager.time.startTime();
+    TimeManager.tm.startTime();
   }
 
   // void OnMouseDown() {

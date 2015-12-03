@@ -12,6 +12,8 @@ TagManager:
   - StayingObstacle
   - PositiveObj
   - Police
+  - Ground
+  - VirtualArea
   layers:
   - Default
   - TransparentFX

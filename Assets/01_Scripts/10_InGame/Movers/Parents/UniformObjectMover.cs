@@ -40,6 +40,6 @@ public class UniformObjectMover : ObjectMover {
   virtual protected void FixedUpdate() {}
 
   virtual protected void OnTriggerEnter(Collider other) {
-    if (isPositive && other.tag != "Boundary") destroyObject();
+    if (isPositive && other.tag != "Boundary" && other.tag != "VirtualArea") destroyObject();
   }
 }

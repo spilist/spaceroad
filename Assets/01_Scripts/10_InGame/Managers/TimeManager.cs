@@ -3,12 +3,12 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class TimeManager : MonoBehaviour {
-  public static TimeManager time;
+  public static TimeManager tm;
   public int now = 0;
   public Text timeText;
 
   void Awake() {
-    time = this;
+    tm = this;
   }
 
   public void startTime() {

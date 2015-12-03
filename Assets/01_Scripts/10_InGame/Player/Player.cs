@@ -9,6 +9,7 @@ public class Player : MonoBehaviour {
   public Transform characters;
   public string character;
   public PlayerAngle playerAngle;
+  public WastedArea wastedArea;
 
   public Text speedText;
   public Text jewelText;
@@ -56,6 +57,7 @@ public class Player : MonoBehaviour {
   }
 
   void FixedUpdate () {
+    if (GameManager.gm.IsOver()) return;
     // speed = caculateSpeed();
     // rb.velocity = direction * speed;
 
@@ -70,7 +72,7 @@ public class Player : MonoBehaviour {
     Turn();
 
     speedText.text = "SPEED: " + rb.velocity.magnitude.ToString("0");
-    jpsText.text = "JEWEL/SEC: " + ((float)jewelCount / TimeManager.time.now).ToString("0.00");
+    jpsText.text = "JEWEL/SEC: " + ((float)jewelCount / TimeManager.tm.now).ToString("0.00");
   }
 
   void Move () {
@@ -83,6 +85,8 @@ public class Player : MonoBehaviour {
 			// rb.AddForce(transform.forward * acceleration, forceMode);
 		}
     rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
+
+    wastedArea.ResetWasteCount();
   }
 
   void Turn () {
