@@ -6,12 +6,14 @@ public class UniformObjectMover : ObjectMover {
   protected float tumble;
   protected Vector3 direction;
   protected UniformObjectsManager manager;
+  protected bool isPositive;
 
   override protected void Awake() {
     base.Awake();
     manager = (UniformObjectsManager) _manager.GetComponent(getManager());
     speed = getSpeed();
     tumble = getTumble();
+    isPositive = manager.isPositive;
   }
 
   override protected void OnEnable() {
@@ -36,4 +38,8 @@ public class UniformObjectMover : ObjectMover {
   }
 
   virtual protected void FixedUpdate() {}
+
+  virtual protected void OnTriggerEnter(Collider other) {
+    if (isPositive && other.tag != "Boundary") destroyObject();
+  }
 }

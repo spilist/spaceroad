@@ -30,10 +30,11 @@ public class PoliceMover : LRObjectMover {
     // Debug.Log(targetAngle + " " + currentAngle + " " + angle);
 
     // float angle = Quaternion.Angle(transform.rotation, targetRot);
-    // Debug.Log(angle);
     if (Mathf.Abs(angle) < angleGoStraight) turnInput = 0;
     // if (Mathf.Abs(Mathf.Abs(angle) - 180) < angleGoStraight) turnInput = 0;
-    else turnInput = angle > 0 ? -1 : 1;
-    // Debug.Log(turnInput);
+    else {
+      turnInput = angle > 0 ? -1 : 1;
+      rb.angularVelocity = Vector3.zero;
+    }
   }
 }

@@ -35,15 +35,13 @@ public class LRObjectMover : ObjectMover {
   }
 
   virtual protected void Move () {
-    if (rb.velocity.magnitude < maxSpeed) {
-      if (decelerating) {
-        if (rb.velocity.magnitude > Time.fixedDeltaTime * deceleration)
-          rb.velocity = rb.velocity - transform.forward * Time.fixedDeltaTime * deceleration;
-      } else {
-        rb.velocity = rb.velocity + transform.forward * Time.fixedDeltaTime * acceleration;
-      }
+    if (decelerating) {
+      if (rb.velocity.magnitude > Time.fixedDeltaTime * deceleration)
+        rb.velocity = rb.velocity - transform.forward * Time.fixedDeltaTime * deceleration;
+    } else {
+      rb.velocity = rb.velocity + transform.forward * Time.fixedDeltaTime * acceleration;
     }
-    // Debug.Log(rb.velocity.magnitude);
+    rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
   }
 
   virtual protected void SetInputByAI() {}

@@ -8,21 +8,10 @@ TagManager:
   - ContactCollider
   - PauseButton
   - Boundary
-  - Ground
-  - Obstacle_big
-  - MiniMonster
-  - Obstacle_small
-  - Obstacle
-  - Part
-  - GoldenCube
-  - Alienship
-  - IceDebris
-  - Monster
-  - PhaseMonster
-  - TimeMonster
-  - SpaceShipDebris
-  - PlayerLaser
-  - Quest
+  - NotCollide
+  - StayingObstacle
+  - PositiveObj
+  - Police
   layers:
   - Default
   - TransparentFX
@@ -34,7 +23,7 @@ TagManager:
   - 
   - FieldObjects
   - Player
-  - 
+  - Boundary
   - 
   - 
   - 

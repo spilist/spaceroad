@@ -11,6 +11,8 @@ public class Player : MonoBehaviour {
   public PlayerAngle playerAngle;
 
   public Text speedText;
+  public Text jewelText;
+  public Text jpsText;
   public float baseSpeed = 80;
   public float maxSpeed = 200;
   public float acceleration = 40;
@@ -27,8 +29,9 @@ public class Player : MonoBehaviour {
   private bool gameStarted;
   private bool decelerating;
 
-  private float m_MovementInputValue;         // The current value of the movement input.
-  private float m_TurnInputValue;             // The current value of the turn input.
+  private float m_MovementInputValue;
+  private float m_TurnInputValue;
+  private int jewelCount = 0;
 
   // public PlayerDirectionIndicator dirIndicator;
 
@@ -50,7 +53,6 @@ public class Player : MonoBehaviour {
     // setDirection(direction);
 
     rb = GetComponent<Rigidbody>();
-    SpawnManager.sm.run();
   }
 
   void FixedUpdate () {
@@ -68,18 +70,19 @@ public class Player : MonoBehaviour {
     Turn();
 
     speedText.text = "SPEED: " + rb.velocity.magnitude.ToString("0");
+    jpsText.text = "JEWEL/SEC: " + ((float)jewelCount / TimeManager.time.now).ToString("0.00");
   }
 
   void Move () {
-		if (rb.velocity.magnitude < maxSpeed) {
-			if (decelerating) {
-        if (rb.velocity.magnitude > Time.fixedDeltaTime * deceleration)
-          rb.velocity = rb.velocity - transform.forward * Time.fixedDeltaTime * deceleration;
-			} else {
-        // rb.velocity = transform.forward * (rb.velocity.magnitude + Time.fixedDeltaTime * acceleration);
-				rb.velocity = rb.velocity + transform.forward * Time.fixedDeltaTime * acceleration;
-			}
+		if (decelerating) {
+      if (rb.velocity.magnitude > Time.fixedDeltaTime * deceleration)
+        rb.velocity = rb.velocity - transform.forward * Time.fixedDeltaTime * deceleration;
+      // rb.AddForce(-transform.forward * deceleration, forceMode);
+		} else {
+      rb.velocity = rb.velocity + transform.forward * Time.fixedDeltaTime * acceleration;
+			// rb.AddForce(transform.forward * acceleration, forceMode);
 		}
+    rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
   }
 
   void Turn () {
@@ -135,7 +138,7 @@ public class Player : MonoBehaviour {
     decelerating = true;
     int sign = (dir == "Left") ? -1 : 1;
     m_TurnInputValue = sign;
-    // rb.angularVelocity = Vector3.zero;
+    rb.angularVelocity = Vector3.zero;
     // Vector3 perp = new Vector3(-direction.z, 0, direction.x) * sign * Time.fixedDeltaTime * curveSensitivity;
     // playerAngle.tilt(sign);
     // playerAngle.setDirection(dir);
@@ -182,8 +185,12 @@ public class Player : MonoBehaviour {
     gameStarted = true;
   }
 
-  // void OnTriggerEnter(Collider other) {
-  //   string tag = other.tag;
+  void OnTriggerEnter(Collider other) {
+    string tag = other.tag;
+    if (tag == "PositiveObj") {
+      jewelCount++;
+      jewelText.text = "Jewel: " + jewelCount;
+    }
 
   //   ObjectsMover mover = other.gameObject.GetComponent<ObjectsMover>();
 
@@ -205,10 +212,10 @@ public class Player : MonoBehaviour {
 
   //   if (tag == "CubeDispenser") {
   //     if (!unstoppable && !isUsingRainbow()) return;
-  //   }
+  // }
 
   //   goodPartsEncounter(mover, mover.cubesWhenEncounter(), mover.bonusCubes());
-  // }
+  }
 
   // public void loseEnergy(int amount, string tag) {
   //   Camera.main.GetComponent<CameraMover>().shake(shakeDuring, shakeBase * amount / 100);
