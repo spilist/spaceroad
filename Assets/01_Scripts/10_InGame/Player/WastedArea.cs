@@ -42,7 +42,7 @@ public class WastedArea : MonoBehaviour {
     else wasteCount += val;
 
     if (wasteCount >= wasteIn) {
-      GameManager.gm.GameOver();
+      GameManager.gm.GameOver("WASTED");
     } else {
       wasteCountText.text = "WASTE IN: " + (wasteIn - wasteCount).ToString("0.00");
     }

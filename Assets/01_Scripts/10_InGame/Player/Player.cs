@@ -14,14 +14,12 @@ public class Player : MonoBehaviour {
   public Text speedText;
   public Text jewelText;
   public Text jpsText;
+
   public float baseSpeed = 80;
   public float maxSpeed = 200;
   public float acceleration = 40;
   public float deceleration = 20;
-  // public float curveSensitivity = 2;
   public float turnSpeed = 180;
-  private float speedScale;
-  private string moreSpeedCondition;
 
   private float speed;
   private Vector3 direction;
@@ -161,24 +159,8 @@ public class Player : MonoBehaviour {
   }
 
   public void processCollision(ObjectMover mover, Collision collision) {
-    speed = Mathf.Max(0, speed - 100);
-    Vector3 relVelocity = collision.relativeVelocity;
-    // Debug.Log(relVelocity);
-    float objMass = mover.GetComponent<Rigidbody>().mass;
-    Vector3 collisionForce = relVelocity * objMass;
-
-    // Vector3 normal = collision.contacts[0].normal;
-    // Vector3 dir = Vector3.Reflect(direction, -normal).normalized;
-    // dir.y = 0;
-    // dir.Normalize();
-
-    // speed -= 200;
-    // if (speed < 0) {
-      // direction = dir;
-      // speed = -speed;
-    // }
-    // setDirection(dir);
-    // rb.AddForceAtPosition(collisionForce, collision.contacts[0].point, ForceMode.Impulse);
+    float damageStandard = collision.relativeVelocity.magnitude;
+    EnergyManager.em.loseEnergy(damageStandard);
   }
 
   public float getSpeed() {

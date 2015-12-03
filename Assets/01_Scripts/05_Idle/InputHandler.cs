@@ -45,6 +45,15 @@ public class InputHandler : MonoBehaviour
     }
     #endif
 
+    // if (Input.GetMouseButtonDown(0)) {
+    //   Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+    //   RaycastHit hit;
+    //   if ( Physics.Raycast( ray, out hit, 100 ) ) {
+    //     string hitTag = hit.transform.tag;
+    //     Debug.Log(hitTag);
+    //   }
+    // }
+
     // if (reactAble() && Input.GetMouseButtonDown(0)) {
     //   if (pause.isResuming()) return;
 

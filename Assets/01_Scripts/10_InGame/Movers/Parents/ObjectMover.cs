@@ -27,7 +27,7 @@ public class ObjectMover : MonoBehaviour {
     string tag = collision.collider.tag;
 
     if (tag == "ContactCollider") {
-     // Player.pl.processCollision(this, collision);
+      Player.pl.processCollision(this, collision);
     }
 
     if (_manager.isFixedObject) return;
