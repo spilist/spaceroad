@@ -209,9 +209,9 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 91418582}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 3
   m_Drag: .5
-  m_AngularDrag: 1
+  m_AngularDrag: 1.5
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -238,9 +238,9 @@ MonoBehaviour:
   jpsText: {fileID: 2055198012}
   baseSpeed: 80
   maxSpeed: 300
-  acceleration: 200
-  deceleration: 40
-  turnSpeed: 3
+  acceleration: 300
+  deceleration: 0
+  turnSpeed: 2.5
 --- !u!65 &91418585
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -632,7 +632,7 @@ Camera:
   far clip plane: 1000
   field of view: 21
   orthographic: 1
-  orthographic size: 90
+  orthographic size: 110
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -14003,7 +14003,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d745170bb409e4b77b7fa90e2d6935b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxEnergy: 2000
+  maxEnergy: 4000
+  ignoreDamage: 50
   energyText: {fileID: 163963527}
 --- !u!4 &2102484971
 Transform:
